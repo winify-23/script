@@ -1,9 +1,1602 @@
--- ██╗    ██╗██╗███╗   ██╗██╗███████╗██╗   ██╗
--- ██║    ██║██║████╗  ██║██║██╔════╝╚██╗ ██╔╝
--- ██║ █╗ ██║██║██╔██╗ ██║██║█████╗   ╚████╔╝ 
--- ██║███╗██║██║██║╚██╗██║██║██╔══╝    ╚██╔╝  
--- ╚███╔███╔╝██║██║ ╚████║██║██║        ██║   
---  ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚═╝╚═╝        ╚═╝   
--- [Protected by WiniFy Luau Obfuscator]
+--[[
+    Misc Library - Các chức năng phụ trợ cho Roblox
+    Hỗ trợ: SpeedHack, JumpPower, Fly, Noclip, InfJump, NoClipCam, CamDistance,
+            TimeManager, SpeedMultiplier, NoFog, InstantPrompts, AntiAFK, FPSUnlocker, NameTags,
+            Freecam, Spectator
 
-local _0xf14b=(function(bytes,key)local buffer={}for i=1,#bytes do buffer[i]=string.char(bit32.bxor(bytes[i],key))end return table.concat(buffer)end);return(function(...)local Il1_0x4834={}Il1_0x4834[_0xf14b({0xa3,0xa3,0x95,0x92,0x98,0x99,0x84},0xfc)]=Il1_0x4834 local Il1_0x4885=game:GetService(_0xf14b({0xb9,0x85,0x88,0x90,0x8c,0x9b,0x9a},0xe9))local Il1_0x488a=game:GetService(_0xf14b({0x39,0x1f,0x09,0x1e,0x25,0x02,0x1c,0x19,0x18,0x3f,0x09,0x1e,0x1a,0x05,0x0f,0x09},0x6c))local Il1_0x486b=game:GetService(_0xf14b({0xf4,0xd3,0xc8,0xf5,0xc3,0xd4,0xd0,0xcf,0xc5,0xc3},0xa6))local Il1_0x4883=Il1_0x4885[_0xf14b({0xe1,0xc2,0xce,0xcc,0xc1,0xfd,0xc1,0xcc,0xd4,0xc8,0xdf},0xad)]local Il1_0x4886=false local Il1_0x4887=(0x1a50-0x1a1e)local Il1_0x4850=false local Il1_0x4826=1.0 local Il1_0x485b=false local Il1_0x485a=((0xc*0x8)+0x4)local Il1_0x4881=false local Il1_0x4838=1.0 local Il1_0x4854=false local Il1_0x4860=((0x9*0x5)+0x5)local Il1_0x4842=nil local Il1_0x482b=nil local Il1_0x482e=nil local Il1_0x4861=false local Il1_0x4833=nil local Il1_0x4825=false local Il1_0x4853=nil local Il1_0x4832=nil local Il1_0x488f=false local Il1_0x4864=0.5 local Il1_0x4858=false local Il1_0x4852=(0x2cf9-0x2ced)local Il1_0x487d=nil local Il1_0x4868=false local Il1_0x483a=nil local Il1_0x483b=false local Il1_0x482f=false local Il1_0x487c=nil local Il1_0x4829=(0x6d49-0x6d49)local Il1_0x4878=false local Il1_0x4870=nil local Il1_0x4841=false local Il1_0x482c=""local Il1_0x483f=Color3[_0xf14b({0x32,0x39,0x2b},0x5c)]((0x33b-0x33a),(0x6067-0x6066),(0x221-0x220))local Il1_0x4848=false local Il1_0x488e=nil local Il1_0x482a=false local Il1_0x482d=(0x378-0x346)local Il1_0x4856=nil local Il1_0x4863=nil local Il1_0x4869=(0xd2-0xd2)local Il1_0x483d=((0x6*0x0)+0x0)local Il1_0x4859=nil local Il1_0x4836=nil local Il1_0x4889=nil local Il1_0x4844=nil local Il1_0x4840=false local Il1_0x4879=nil local Il1_0x4862=nil local Il1_0x4851=nil local Il1_0x4873=nil local function Il1_0x484c()return Il1_0x4883[_0xf14b({0xef,0xc4,0xcd,0xde,0xcd,0xcf,0xd8,0xc9,0xde},0xac)]or workspace:FindFirstChild(Il1_0x4883[_0xf14b({0x8c,0xa3,0xaf,0xa7},0xc2)])end local function Il1_0x487b()local Il1_0x4871=Il1_0x484c()if Il1_0x4871 then return Il1_0x4871:FindFirstChildOfClass(_0xf14b({0xde,0xe3,0xfb,0xf7,0xf8,0xf9,0xff,0xf2},0x96))end return nil end local function Il1_0x487f(Il1_0x487e,...)if Il1_0x487e==Il1_0x4834 then return...end return Il1_0x487e,...end function Il1_0x4834.SetSpeed(enable,speed)enable,speed=Il1_0x487f(enable,speed)Il1_0x4886=enable if enable then Il1_0x4887=speed or(0x4d3-0x4a1)local Il1_0x485c=Il1_0x487b()if Il1_0x485c then Il1_0x485c[_0xf14b({0x70,0x46,0x4b,0x4c,0x74,0x57,0x42,0x42,0x43},0x27)]=Il1_0x4887 end local function Il1_0x485f()local Il1_0x4874=Il1_0x487b()if Il1_0x4874 then Il1_0x4874[_0xf14b({0xf2,0xc4,0xc9,0xce,0xf6,0xd5,0xc0,0xc0,0xc1},0xa5)]=Il1_0x4887 end end Il1_0x4883[_0xf14b({0xfe,0xd5,0xdc,0xcf,0xdc,0xde,0xc9,0xd8,0xcf,0xfc,0xd9,0xd9,0xd8,0xd9},0xbd)]:Connect(Il1_0x485f)else local Il1_0x485c=Il1_0x487b()if Il1_0x485c then Il1_0x485c[_0xf14b({0x24,0x12,0x1f,0x18,0x20,0x03,0x16,0x16,0x17},0x73)]=(0x60cb-0x60bb)end end end function Il1_0x4834.IsSpeedEnabled()return Il1_0x4886 end function Il1_0x4834.SetSpeedMultiplier(enable,multiplier)enable,multiplier=Il1_0x487f(enable,multiplier)Il1_0x4850=enable if enable then Il1_0x4826=multiplier or((0x9*0x0)+0x3)local Il1_0x485c=Il1_0x487b()if Il1_0x485c then Il1_0x485c[_0xf14b({0x15,0x23,0x2e,0x29,0x11,0x32,0x27,0x27,0x26},0x42)]=(0x35e-0x34e)*Il1_0x4826 end local function Il1_0x485f()local Il1_0x4874=Il1_0x487b()if Il1_0x4874 then Il1_0x4874[_0xf14b({0xc9,0xff,0xf2,0xf5,0xcd,0xee,0xfb,0xfb,0xfa},0x9e)]=((0xe*0x1)+0x2)*Il1_0x4826 end end Il1_0x4883[_0xf14b({0xf2,0xd9,0xd0,0xc3,0xd0,0xd2,0xc5,0xd4,0xc3,0xf0,0xd5,0xd5,0xd4,0xd5},0xb1)]:Connect(Il1_0x485f)else local Il1_0x485c=Il1_0x487b()if Il1_0x485c and not Il1_0x4886 then Il1_0x485c[_0xf14b({0x0a,0x3c,0x31,0x36,0x0e,0x2d,0x38,0x38,0x39},0x5d)]=(0x7302-0x72f2)elseif Il1_0x485c and Il1_0x4886 then Il1_0x485c[_0xf14b({0x66,0x50,0x5d,0x5a,0x62,0x41,0x54,0x54,0x55},0x31)]=Il1_0x4887 end end end function Il1_0x4834.IsSpeedMultiplierEnabled()return Il1_0x4850 end function Il1_0x4834.SetJumpPower(enable,power)enable,power=Il1_0x487f(enable,power)Il1_0x485b=enable if enable then Il1_0x485a=power or(0x22a-0x1c6)local Il1_0x485c=Il1_0x487b()if Il1_0x485c then Il1_0x485c[_0xf14b({0xdf,0xe0,0xf8,0xe5,0xc5,0xfa,0xe2,0xf0,0xe7},0x95)]=Il1_0x485a end local function Il1_0x485f()local Il1_0x4874=Il1_0x487b()if Il1_0x4874 then Il1_0x4874[_0xf14b({0xb6,0x89,0x91,0x8c,0xac,0x93,0x8b,0x99,0x8e},0xfc)]=Il1_0x485a end end Il1_0x4883[_0xf14b({0xa7,0x8c,0x85,0x96,0x85,0x87,0x90,0x81,0x96,0xa5,0x80,0x80,0x81,0x80},0xe4)]:Connect(Il1_0x485f)else local Il1_0x485c=Il1_0x487b()if Il1_0x485c then Il1_0x485c[_0xf14b({0x7f,0x40,0x58,0x45,0x65,0x5a,0x42,0x50,0x47},0x35)]=((0x3*0x10)+0x2)end end end function Il1_0x4834.IsJumpPowerEnabled()return Il1_0x485b end function Il1_0x4834.SetJumpPowerMultiplier(enable,multiplier)enable,multiplier=Il1_0x487f(enable,multiplier)Il1_0x4881=enable if enable then Il1_0x4838=multiplier or(0x2488-0x2483)local Il1_0x485c=Il1_0x487b()if Il1_0x485c then Il1_0x485c[_0xf14b({0xb6,0x89,0x91,0x8c,0xac,0x93,0x8b,0x99,0x8e},0xfc)]=((0xf*0x3)+0x5)*Il1_0x4838 end local function Il1_0x485f()local Il1_0x4874=Il1_0x487b()if Il1_0x4874 then Il1_0x4874[_0xf14b({0xf2,0xcd,0xd5,0xc8,0xe8,0xd7,0xcf,0xdd,0xca},0xb8)]=(0x8df5-0x8dc3)*Il1_0x4838 end end Il1_0x4883[_0xf14b({0xa1,0x8a,0x83,0x90,0x83,0x81,0x96,0x87,0x90,0xa3,0x86,0x86,0x87,0x86},0xe2)]:Connect(Il1_0x485f)else local Il1_0x485c=Il1_0x487b()if Il1_0x485c and not Il1_0x485b then Il1_0x485c[_0xf14b({0xf2,0xcd,0xd5,0xc8,0xe8,0xd7,0xcf,0xdd,0xca},0xb8)]=(0x365-0x333)elseif Il1_0x485c and Il1_0x485b then Il1_0x485c[_0xf14b({0x48,0x77,0x6f,0x72,0x52,0x6d,0x75,0x67,0x70},0x02)]=Il1_0x485a end end end function Il1_0x4834.IsJumpPowerMultiplierEnabled()return Il1_0x4881 end function Il1_0x4834.SetFly(enable,speed)enable,speed=Il1_0x487f(enable,speed)if enable then Il1_0x4854=true if Il1_0x482b then Il1_0x482b:Disconnect()Il1_0x482b=nil end if Il1_0x482e then Il1_0x482e:Disconnect()Il1_0x482e=nil end if Il1_0x4842 then Il1_0x4842:Destroy()end local Il1_0x4887=speed or((0xb*0x4)+0x6)local Il1_0x4871=Il1_0x484c()if not Il1_0x4871 then return end local Il1_0x4822=Il1_0x4871:FindFirstChild(_0xf14b({0xc9,0xf4,0xec,0xe0,0xef,0xee,0xe8,0xe5,0xd3,0xee,0xee,0xf5,0xd1,0xe0,0xf3,0xf5},0x81))if not Il1_0x4822 then return end Il1_0x4842=Instance[_0xf14b({0x33,0x38,0x2a},0x5d)](_0xf14b({0x1d,0x30,0x3b,0x26,0x09,0x3a,0x33,0x30,0x3c,0x36,0x2b,0x26},0x5f))Il1_0x4842[_0xf14b({0x1d,0x32,0x3e,0x36},0x53)]=_0xf14b({0x3a,0x10,0x05,0x2a,0x19,0x10,0x13,0x1f,0x15,0x08,0x05},0x7c)Il1_0x4842[_0xf14b({0x95,0xb9,0xa0,0x9e,0xb7,0xaa,0xbb,0xbd},0xd8)]=Vector3[_0xf14b({0x96,0x9d,0x8f},0xf8)](math[_0xf14b({0x5c,0x41,0x53,0x51},0x34)],math[_0xf14b({0x6d,0x70,0x62,0x60},0x05)],math[_0xf14b({0xb8,0xa5,0xb7,0xb5},0xd0)])Il1_0x4842[_0xf14b({0x87,0xb4,0xbd,0xbe,0xb2,0xb8,0xa5,0xa8},0xd1)]=Vector3[_0xf14b({0x53,0x58,0x4a},0x3d)]((0x62f-0x62f),((0x4*0x0)+0x0),(0x448f-0x448f))Il1_0x4842[_0xf14b({0xcb},0x9b)]=(0x22d+0x2b5)Il1_0x4842[_0xf14b({0x73,0x42,0x51,0x46,0x4d,0x57},0x23)]=Il1_0x4822 local Il1_0x484d=Vector3[_0xf14b({0xb0,0xbb,0xa9},0xde)](((0x6*0x0)+0x0),((0xa*0x0)+0x0),(0x405b-0x405b))local Il1_0x483c=(0x336-0x336)local function Il1_0x485d(Il1_0x4835,Il1_0x486a)if Il1_0x486a then return end if Il1_0x4835[_0xf14b({0x9d,0xb3,0xaf,0x95,0xb9,0xb2,0xb3},0xd6)]==Enum[_0xf14b({0x9f,0xb1,0xad,0x97,0xbb,0xb0,0xb1},0xd4)][_0xf14b({0xad},0xeb)]then Il1_0x4834[_0xf14b({0xc1,0xf7,0xe6,0xd4,0xfe,0xeb},0x92)](false)return end end local function Il1_0x484e(Il1_0x4835,Il1_0x486a)end Il1_0x482b=Il1_0x488a[_0xf14b({0xec,0xcb,0xd5,0xd0,0xd1,0xe7,0xc0,0xc2,0xc4,0xcb},0xa5)]:Connect(Il1_0x485d)local function Il1_0x4865()if not Il1_0x4854 or not Il1_0x4842 then if Il1_0x482e then Il1_0x482e:Disconnect()Il1_0x482e=nil end return end local Il1_0x4871=Il1_0x484c()if not Il1_0x4871 or not Il1_0x4871[_0xf14b({0x12,0x23,0x30,0x27,0x2c,0x36},0x42)]then return end local Il1_0x4822=Il1_0x4871:FindFirstChild(_0xf14b({0x09,0x34,0x2c,0x20,0x2f,0x2e,0x28,0x25,0x13,0x2e,0x2e,0x35,0x11,0x20,0x33,0x35},0x41))if not Il1_0x4822 then return end Il1_0x484d=Vector3[_0xf14b({0x3d,0x36,0x24},0x53)]((0x361-0x361),(0x946e-0x946e),(0x90bf-0x90bf))if Il1_0x488a:IsKeyDown(Enum[_0xf14b({0xb0,0x9e,0x82,0xb8,0x94,0x9f,0x9e},0xfb)][_0xf14b({0x98},0xcf)])then Il1_0x484d=Il1_0x484d+Vector3[_0xf14b({0x9b,0x90,0x82},0xf5)]((0x597c-0x597c),Il1_0x4887,((0xb*0x0)+0x0))end if Il1_0x488a:IsKeyDown(Enum[_0xf14b({0x35,0x1b,0x07,0x3d,0x11,0x1a,0x1b},0x7e)][_0xf14b({0x10},0x43)])then Il1_0x484d=Il1_0x484d+Vector3[_0xf14b({0xb4,0xbf,0xad},0xda)](((0x5*0x0)+0x0),-Il1_0x4887,((0x6*0x0)+0x0))end if Il1_0x488a:IsKeyDown(Enum[_0xf14b({0x31,0x1f,0x03,0x39,0x15,0x1e,0x1f},0x7a)][_0xf14b({0x6a},0x2b)])then Il1_0x484d=Il1_0x484d-(Il1_0x4822[_0xf14b({0xe8,0xed,0xd9,0xca,0xc6,0xce},0xab)][_0xf14b({0xa4,0x9f,0x91,0x9e,0x82,0xa0,0x93,0x95,0x82,0x99,0x84},0xf6)]*Il1_0x4887)end if Il1_0x488a:IsKeyDown(Enum[_0xf14b({0x51,0x7f,0x63,0x59,0x75,0x7e,0x7f},0x1a)][_0xf14b({0xdc},0x98)])then Il1_0x484d=Il1_0x484d+(Il1_0x4822[_0xf14b({0x32,0x37,0x03,0x10,0x1c,0x14},0x71)][_0xf14b({0xaf,0x94,0x9a,0x95,0x89,0xab,0x98,0x9e,0x89,0x92,0x8f},0xfd)]*Il1_0x4887)end Il1_0x4842[_0xf14b({0xc9,0xfa,0xf3,0xf0,0xfc,0xf6,0xeb,0xe6},0x9f)]=Il1_0x484d end Il1_0x482e=Il1_0x486b[_0xf14b({0x9f,0xa8,0xa3,0xa9,0xa8,0xbf,0x9e,0xb9,0xa8,0xbd,0xbd,0xa8,0xa9},0xcd)]:Connect(Il1_0x4865)else Il1_0x4854=false if Il1_0x482b then Il1_0x482b:Disconnect()Il1_0x482b=nil end if Il1_0x482e then Il1_0x482e:Disconnect()Il1_0x482e=nil end if Il1_0x4842 then Il1_0x4842:Destroy()Il1_0x4842=nil end end end function Il1_0x4834.IsFlyEnabled()return Il1_0x4854 end function Il1_0x4834.SetNoclip(enable)enable=Il1_0x487f(enable)Il1_0x4861=enable if enable then if Il1_0x4833 then Il1_0x4833:Disconnect()end Il1_0x4833=Il1_0x486b[_0xf14b({0x45,0x72,0x79,0x73,0x72,0x65,0x44,0x63,0x72,0x67,0x67,0x72,0x73},0x17)]:Connect(function()if not Il1_0x4861 then if Il1_0x4833 then Il1_0x4833:Disconnect()Il1_0x4833=nil end return end local Il1_0x4871=Il1_0x484c()if not Il1_0x4871 then return end for Il1_0x4866,Il1_0x4890 in ipairs(Il1_0x4871:GetDescendants())do if Il1_0x4890:IsA(_0xf14b({0x69,0x4a,0x58,0x4e,0x7b,0x4a,0x59,0x5f},0x2b))then Il1_0x4890[_0xf14b({0xc5,0xe7,0xe8,0xc5,0xe9,0xea,0xea,0xef,0xe2,0xe3},0x86)]=false end end end)else local Il1_0x4871=Il1_0x484c()if Il1_0x4871 then for Il1_0x4866,Il1_0x4890 in ipairs(Il1_0x4871:GetDescendants())do if Il1_0x4890:IsA(_0xf14b({0x61,0x42,0x50,0x46,0x73,0x42,0x51,0x57},0x23))then Il1_0x4890[_0xf14b({0x27,0x05,0x0a,0x27,0x0b,0x08,0x08,0x0d,0x00,0x01},0x64)]=true end end end if Il1_0x4833 then Il1_0x4833:Disconnect()Il1_0x4833=nil end end end function Il1_0x4834.IsNoclipEnabled()return Il1_0x4861 end function Il1_0x4834.SetInfJump(enable)enable=Il1_0x487f(enable)Il1_0x4848=enable if enable then if Il1_0x488e then Il1_0x488e:Disconnect()end local Il1_0x4872=((0xe*0x0)+0x0)Il1_0x488e=Il1_0x488a[_0xf14b({0x74,0x53,0x4d,0x48,0x49,0x7f,0x58,0x5a,0x5c,0x53},0x3d)]:Connect(function(Il1_0x4835,Il1_0x486a)if Il1_0x486a then return end if Il1_0x4835[_0xf14b({0x76,0x58,0x44,0x7e,0x52,0x59,0x58},0x3d)]==Enum[_0xf14b({0x3c,0x12,0x0e,0x34,0x18,0x13,0x12},0x77)][_0xf14b({0x08,0x2b,0x3a,0x38,0x3e},0x5b)]then local Il1_0x485c=Il1_0x487b()if not Il1_0x485c then return end if Il1_0x485c[_0xf14b({0x58,0x72,0x71,0x71,0x6c,0x53,0x7f,0x6a,0x7b,0x6c,0x77,0x7f,0x72},0x1e)]~=Enum[_0xf14b({0x2f,0x03,0x16,0x07,0x10,0x0b,0x03,0x0e},0x62)][_0xf14b({0x83,0xab,0xb0},0xc2)]then Il1_0x4872=(0xac-0xac)end Il1_0x4872=Il1_0x4872+(0x3c89-0x3c88)if Il1_0x4872<=(0x2c8-0x2c6)then Il1_0x485c:ChangeState(Enum[_0xf14b({0xbc,0x81,0x99,0x95,0x9a,0x9b,0x9d,0x90,0xa7,0x80,0x95,0x80,0x91,0xa0,0x8d,0x84,0x91},0xf4)][_0xf14b({0xcb,0xf4,0xec,0xf1,0xe8,0xef,0xe6},0x81)])end end end)else if Il1_0x488e then Il1_0x488e:Disconnect()Il1_0x488e=nil end end end function Il1_0x4834.IsInfJumpEnabled()return Il1_0x4848 end function Il1_0x4834.SetNoClipCam(enable)enable=Il1_0x487f(enable)Il1_0x4825=enable if enable then local Il1_0x486e,Il1_0x4857=pcall(function()workspace[_0xf14b({0xad,0x8f,0x83,0x8b,0x9c,0x8f},0xee)]:ClearAllFilters()workspace[_0xf14b({0x0a,0x28,0x24,0x2c,0x3b,0x28},0x49)][_0xf14b({0xba,0x95,0x99,0x90,0x98,0xb3,0x9a,0xaa,0x95,0x99,0x8b},0xfc)]=((0xa*0x9)+0x0)workspace[_0xf14b({0x4d,0x7b,0x7c,0x7c,0x6b,0x60,0x7a,0x4d,0x6f,0x63,0x6b,0x7c,0x6f},0x0e)][_0xf14b({0xc1,0xc4,0xf0,0xe3,0xef,0xe7},0x82)]=workspace[_0xf14b({0x84,0xb2,0xb5,0xb5,0xa2,0xa9,0xb3,0x84,0xa6,0xaa,0xa2,0xb5,0xa6},0xc7)][_0xf14b({0xb0,0xb5,0x81,0x92,0x9e,0x96},0xf3)]end)if Il1_0x4853 then Il1_0x4853:Disconnect()end Il1_0x4853=Il1_0x486b[_0xf14b({0xaa,0x9d,0x96,0x9c,0x9d,0x8a,0xab,0x8c,0x9d,0x88,0x88,0x9d,0x9c},0xf8)]:Connect(function()if not Il1_0x4825 then if Il1_0x4853 then Il1_0x4853:Disconnect()Il1_0x4853=nil end return end local Il1_0x4891=workspace[_0xf14b({0xb8,0x8e,0x89,0x89,0x9e,0x95,0x8f,0xb8,0x9a,0x96,0x9e,0x89,0x9a},0xfb)]if Il1_0x4891 then local Il1_0x484f=Il1_0x4891[_0xf14b({0x35,0x30,0x04,0x17,0x1b,0x13},0x76)]Il1_0x4891[_0xf14b({0x90,0x95,0xa1,0xb2,0xbe,0xb6},0xd3)]=Il1_0x484f*CFrame[_0xf14b({0xb6,0xbd,0xaf},0xd8)]((0x186-0x186),((0x7*0x0)+0x0),((0x7*0x0)+0x0))end end)else if Il1_0x4853 then Il1_0x4853:Disconnect()Il1_0x4853=nil end end end function Il1_0x4834.IsNoClipCamEnabled()return Il1_0x4825 end function Il1_0x4834.SetCamDistance(enable,distance)enable,distance=Il1_0x487f(enable,distance)Il1_0x488f=enable Il1_0x4864=distance or 0.5 if enable then if Il1_0x4832 then Il1_0x4832:Disconnect()end Il1_0x4832=Il1_0x486b[_0xf14b({0x0a,0x3d,0x36,0x3c,0x3d,0x2a,0x0b,0x2c,0x3d,0x28,0x28,0x3d,0x3c},0x58)]:Connect(function()if not Il1_0x488f then if Il1_0x4832 then Il1_0x4832:Disconnect()Il1_0x4832=nil end workspace[_0xf14b({0x8f,0xb9,0xbe,0xbe,0xa9,0xa2,0xb8,0x8f,0xad,0xa1,0xa9,0xbe,0xad},0xcc)][_0xf14b({0x5f,0x70,0x7c,0x75,0x7d,0x56,0x7f,0x4f,0x70,0x7c,0x6e},0x19)]=(0x7742-0x76fc)workspace[_0xf14b({0xf9,0xcf,0xc8,0xc8,0xdf,0xd4,0xce,0xf9,0xdb,0xd7,0xdf,0xc8,0xdb},0xba)]=workspace[_0xf14b({0x82,0xb4,0xb3,0xb3,0xa4,0xaf,0xb5,0x82,0xa0,0xac,0xa4,0xb3,0xa0},0xc1)]return end local Il1_0x4891=workspace[_0xf14b({0x26,0x10,0x17,0x17,0x00,0x0b,0x11,0x26,0x04,0x08,0x00,0x17,0x04},0x65)]if Il1_0x4891 then Il1_0x4891[_0xf14b({0x62,0x4d,0x41,0x48,0x40,0x6b,0x42,0x72,0x4d,0x41,0x53},0x24)]=Il1_0x4864 end end)else workspace[_0xf14b({0x77,0x41,0x46,0x46,0x51,0x5a,0x40,0x77,0x55,0x59,0x51,0x46,0x55},0x34)][_0xf14b({0x4f,0x60,0x6c,0x65,0x6d,0x46,0x6f,0x5f,0x60,0x6c,0x7e},0x09)]=(0x4d2-0x48c)if Il1_0x4832 then Il1_0x4832:Disconnect()Il1_0x4832=nil end end end function Il1_0x4834.IsCamDistanceEnabled()return Il1_0x488f end function Il1_0x4834.SetTimeManager(enable,hour)enable,hour=Il1_0x487f(enable,hour)Il1_0x4858=enable if enable then Il1_0x4852=hour or(0x9850-0x9844)local Il1_0x4827=game:GetService(_0xf14b({0xdd,0xf8,0xf6,0xf9,0xe5,0xf8,0xff,0xf6},0x91))local function Il1_0x4876()Il1_0x4827[_0xf14b({0x9d,0xb2,0xb1,0xbd,0xb5,0x8a,0xb7,0xb3,0xbb},0xde)]=Il1_0x4852 end Il1_0x4876()if Il1_0x487d then Il1_0x487d:Disconnect()end Il1_0x487d=Il1_0x486b[_0xf14b({0x2b,0x1c,0x17,0x1d,0x1c,0x0b,0x2a,0x0d,0x1c,0x09,0x09,0x1c,0x1d},0x79)]:Connect(function()if not Il1_0x4858 then if Il1_0x487d then Il1_0x487d:Disconnect()Il1_0x487d=nil end return end Il1_0x4876()end)else Il1_0x4858=false if Il1_0x487d then Il1_0x487d:Disconnect()Il1_0x487d=nil end end end function Il1_0x4834.IsTimeManagerEnabled()return Il1_0x4858 end function Il1_0x4834.SetNoFog(enable,distance)enable,distance=Il1_0x487f(enable,distance)Il1_0x4868=enable if enable then local Il1_0x4827=game:GetService(_0xf14b({0x15,0x30,0x3e,0x31,0x2d,0x30,0x37,0x3e},0x59))if not Il1_0x4834[_0xf14b({0x3a,0x0a,0x17,0x0c,0x02,0x0c,0x0b,0x04,0x09,0x23,0x0a,0x02,0x36,0x00,0x11,0x11,0x0c,0x0b,0x02,0x16},0x65)]then Il1_0x4834[_0xf14b({0xf8,0xc8,0xd5,0xce,0xc0,0xce,0xc9,0xc6,0xcb,0xe1,0xc8,0xc0,0xf4,0xc2,0xd3,0xd3,0xce,0xc9,0xc0,0xd4},0xa7)]={FogEnd=Il1_0x4827[_0xf14b({0xde,0xf7,0xff,0xdd,0xf6,0xfc},0x98)],FogStart=Il1_0x4827[_0xf14b({0x85,0xac,0xa4,0x90,0xb7,0xa2,0xb1,0xb7},0xc3)],FogColor=Il1_0x4827[_0xf14b({0x8d,0xa4,0xac,0x88,0xa4,0xa7,0xa4,0xb9},0xcb)]}end if distance then Il1_0x4827[_0xf14b({0xf9,0xd0,0xd8,0xfa,0xd1,0xdb},0xbf)]=distance Il1_0x4827[_0xf14b({0xcb,0xe2,0xea,0xde,0xf9,0xec,0xff,0xf9},0x8d)]=distance*0.8 else Il1_0x4827[_0xf14b({0x49,0x60,0x68,0x4a,0x61,0x6b},0x0f)]=((0x3*0x8235)+0x1)Il1_0x4827[_0xf14b({0x86,0xaf,0xa7,0x93,0xb4,0xa1,0xb2,0xb4},0xc0)]=(0x44e+0x18252)end if Il1_0x483a then Il1_0x483a:Disconnect()end Il1_0x483a=Il1_0x486b[_0xf14b({0x03,0x34,0x3f,0x35,0x34,0x23,0x02,0x25,0x34,0x21,0x21,0x34,0x35},0x51)]:Connect(function()if not Il1_0x4868 then if Il1_0x483a then Il1_0x483a:Disconnect()Il1_0x483a=nil end return end if distance then Il1_0x4827[_0xf14b({0xc5,0xec,0xe4,0xc6,0xed,0xe7},0x83)]=distance Il1_0x4827[_0xf14b({0x33,0x1a,0x12,0x26,0x01,0x14,0x07,0x01},0x75)]=distance*0.8 else Il1_0x4827[_0xf14b({0x9c,0xb5,0xbd,0x9f,0xb4,0xbe},0xda)]=((0xa*0x2710)+0x0)Il1_0x4827[_0xf14b({0xdd,0xf4,0xfc,0xc8,0xef,0xfa,0xe9,0xef},0x9b)]=(0x1940e-0xd6e)end end)else Il1_0x4868=false if Il1_0x4834[_0xf14b({0x9e,0xae,0xb3,0xa8,0xa6,0xa8,0xaf,0xa0,0xad,0x87,0xae,0xa6,0x92,0xa4,0xb5,0xb5,0xa8,0xaf,0xa6,0xb2},0xc1)]then local Il1_0x4827=game:GetService(_0xf14b({0xd5,0xf0,0xfe,0xf1,0xed,0xf0,0xf7,0xfe},0x99))Il1_0x4827[_0xf14b({0x47,0x6e,0x66,0x44,0x6f,0x65},0x01)]=Il1_0x4834[_0xf14b({0x5d,0x6d,0x70,0x6b,0x65,0x6b,0x6c,0x63,0x6e,0x44,0x6d,0x65,0x51,0x67,0x76,0x76,0x6b,0x6c,0x65,0x71},0x02)][_0xf14b({0xf8,0xd1,0xd9,0xfb,0xd0,0xda},0xbe)]Il1_0x4827[_0xf14b({0x8d,0xa4,0xac,0x98,0xbf,0xaa,0xb9,0xbf},0xcb)]=Il1_0x4834[_0xf14b({0xfa,0xca,0xd7,0xcc,0xc2,0xcc,0xcb,0xc4,0xc9,0xe3,0xca,0xc2,0xf6,0xc0,0xd1,0xd1,0xcc,0xcb,0xc2,0xd6},0xa5)][_0xf14b({0xa5,0x8c,0x84,0xb0,0x97,0x82,0x91,0x97},0xe3)]Il1_0x4827[_0xf14b({0x11,0x38,0x30,0x14,0x38,0x3b,0x38,0x25},0x57)]=Il1_0x4834[_0xf14b({0x8a,0xba,0xa7,0xbc,0xb2,0xbc,0xbb,0xb4,0xb9,0x93,0xba,0xb2,0x86,0xb0,0xa1,0xa1,0xbc,0xbb,0xb2,0xa6},0xd5)][_0xf14b({0xd5,0xfc,0xf4,0xd0,0xfc,0xff,0xfc,0xe1},0x93)]end if Il1_0x483a then Il1_0x483a:Disconnect()Il1_0x483a=nil end end end function Il1_0x4834.IsNoFogEnabled()return Il1_0x4868 end function Il1_0x4834.SetInstantPrompts(enable)enable=Il1_0x487f(enable)Il1_0x483b=enable if enable then for Il1_0x4866,Il1_0x486c in ipairs(workspace:GetDescendants())do if Il1_0x486c:IsA(_0xf14b({0xc4,0xe6,0xfb,0xec,0xfd,0xf9,0xfd,0xe0,0xed,0xc4,0xe6,0xfb,0xf9,0xe4,0xe0},0x94))then Il1_0x486c[_0xf14b({0xd5,0xf2,0xf1,0xf9,0xd9,0xe8,0xef,0xfc,0xe9,0xf4,0xf2,0xf3},0x9d)]=(0x3bd-0x3bd)end end else for Il1_0x4866,Il1_0x486c in ipairs(workspace:GetDescendants())do if Il1_0x486c:IsA(_0xf14b({0xff,0xdd,0xc0,0xd7,0xc6,0xc2,0xc6,0xdb,0xd6,0xff,0xdd,0xc0,0xc2,0xdf,0xdb},0xaf))then Il1_0x486c[_0xf14b({0x7e,0x59,0x5a,0x52,0x72,0x43,0x44,0x57,0x42,0x5f,0x59,0x58},0x36)]=0.3 end end end end function Il1_0x4834.IsInstantPromptsEnabled()return Il1_0x483b end function Il1_0x4834.SetAntiAFK(enable)enable=Il1_0x487f(enable)Il1_0x482f=enable if enable then Il1_0x4829=tick()if Il1_0x487c then Il1_0x487c:Disconnect()end Il1_0x487c=game:GetService(_0xf14b({0x48,0x6f,0x74,0x49,0x7f,0x68,0x6c,0x73,0x79,0x7f},0x1a))[_0xf14b({0xac,0x81,0x85,0x96,0x90,0x86,0x81,0x85,0x90},0xe4)]:Connect(function()if not Il1_0x482f then if Il1_0x487c then Il1_0x487c:Disconnect()Il1_0x487c=nil end return end local Il1_0x4839=tick()if Il1_0x4839-Il1_0x4829>=(0x1e7-0x1ab)then Il1_0x4829=Il1_0x4839 local Il1_0x4830=Il1_0x4883 if Il1_0x4830 and Il1_0x4830[_0xf14b({0xca,0xe1,0xe8,0xfb,0xe8,0xea,0xfd,0xec,0xfb},0x89)]then local Il1_0x4822=Il1_0x4830[_0xf14b({0x6e,0x45,0x4c,0x5f,0x4c,0x4e,0x59,0x48,0x5f},0x2d)]:FindFirstChild(_0xf14b({0xc8,0xf5,0xed,0xe1,0xee,0xef,0xe9,0xe4,0xd2,0xef,0xef,0xf4,0xd0,0xe1,0xf2,0xf4},0x80))if Il1_0x4822 then Il1_0x4822[_0xf14b({0xa5,0x96,0x9f,0x9c,0x90,0x9a,0x87,0x8a},0xf3)]=Vector3[_0xf14b({0x7c,0x77,0x65},0x12)]((0x11-0x11),(0x52ca-0x5298),(0x3ff5-0x3ff5))wait(0.1)Il1_0x4822[_0xf14b({0xbd,0x8e,0x87,0x84,0x88,0x82,0x9f,0x92},0xeb)]=Vector3[_0xf14b({0x77,0x7c,0x6e},0x19)]((0x324-0x324),(0x2d4-0x2d4),((0x4*0x0)+0x0))end end end end)pcall(function()local Il1_0x483e=game:GetService(_0xf14b({0x00,0x2c,0x31,0x26,0x04,0x36,0x2a},0x43))local Il1_0x4882=Il1_0x483e:FindFirstChild(_0xf14b({0xb5,0x98,0x9c,0x91,0x89,0x95,0xaa,0x9c,0x8f,0x93,0x94,0x93,0x9a},0xfd))or Il1_0x483e:FindFirstChild(_0xf14b({0xca,0xe2,0xf4,0xf4,0xe6,0xe0,0xe2,0xd7,0xe8,0xf4,0xf3,0xe2,0xe3},0x87))[_0xf14b({0x9f,0xae,0xbd,0xaa,0xa1,0xbb},0xcf)]if Il1_0x4882 then Il1_0x4882[_0xf14b({0xc3,0xe8,0xe7,0xe4,0xea,0xe3,0xe2},0x86)]=false end end)else Il1_0x482f=false if Il1_0x487c then Il1_0x487c:Disconnect()Il1_0x487c=nil end end end function Il1_0x4834.IsAntiAFKEnabled()return Il1_0x482f end function Il1_0x4834.SetFPSUnlocker(enable)enable=Il1_0x487f(enable)Il1_0x4878=enable if enable then pcall(function()local Il1_0x484b=game:GetService(_0xf14b({0xe1,0xc6,0xd3,0xc6,0xc1},0xb2))Il1_0x484b:FPSUnlock()end)if Il1_0x4870 then Il1_0x4870:Disconnect()end Il1_0x4870=Il1_0x486b[_0xf14b({0x29,0x1e,0x15,0x1f,0x1e,0x09,0x28,0x0f,0x1e,0x0b,0x0b,0x1e,0x1f},0x7b)]:Connect(function()if not Il1_0x4878 then if Il1_0x4870 then Il1_0x4870:Disconnect()Il1_0x4870=nil end return end pcall(function()workspace:SetRealPhysicsFPS((0x38f-0x29f))Il1_0x486b:Set3dRenderingEnabled(true)end)end)else Il1_0x4878=false if Il1_0x4870 then Il1_0x4870:Disconnect()Il1_0x4870=nil end pcall(function()workspace:SetRealPhysicsFPS(((0x8*0x7)+0x4))end)end end function Il1_0x4834.IsFPSUnlockerEnabled()return Il1_0x4878 end function Il1_0x4834.SetNameTags(enable,prefix,color)enable,prefix,color=Il1_0x487f(enable,prefix,color)Il1_0x4841=enable if enable then Il1_0x482c=prefix or""Il1_0x483f=color or Color3[_0xf14b({0x82,0x96,0x8b,0x89,0xb6,0xa3,0xa6},0xe4)]((0x210e-0x200f),((0xe*0x12)+0x3),(0x8236-0x8137))for Il1_0x4866,Il1_0x4830 in ipairs(Il1_0x4885:GetPlayers())do if Il1_0x4830~=Il1_0x4883 then local function Il1_0x4837()local Il1_0x4880=Il1_0x4830[_0xf14b({0x1f,0x34,0x3d,0x2e,0x3d,0x3f,0x28,0x39,0x2e},0x5c)]or workspace:FindFirstChild(Il1_0x4830[_0xf14b({0x71,0x5e,0x52,0x5a},0x3f)])if Il1_0x4880 then local Il1_0x488b=Il1_0x4880:FindFirstChild(_0xf14b({0xd5,0xf8,0xfc,0xf9},0x9d))if Il1_0x488b then local Il1_0x488d=Il1_0x488b:FindFirstChild(_0xf14b({0xb7,0x98,0x94,0x9c,0xad,0x98,0x9e},0xf9)..Il1_0x4830[_0xf14b({0xa9,0x8f,0x99,0x8e,0xb5,0x98},0xfc)])if Il1_0x488d then Il1_0x488d:Destroy()end Il1_0x488d=Instance[_0xf14b({0xc6,0xcd,0xdf},0xa8)](_0xf14b({0x20,0x0b,0x0e,0x0e,0x00,0x0d,0x03,0x10,0x06,0x25,0x17,0x0b},0x62))Il1_0x488d[_0xf14b({0x54,0x7b,0x77,0x7f},0x1a)]=_0xf14b({0x6a,0x45,0x49,0x41,0x70,0x45,0x43},0x24)..Il1_0x4830[_0xf14b({0x19,0x3f,0x29,0x3e,0x05,0x28},0x4c)]Il1_0x488d[_0xf14b({0xf0,0xca,0xd9,0xc6},0xa3)]=UDim2[_0xf14b({0x81,0x8a,0x98},0xef)]((0x372f-0x372f),((0xf*0x6)+0xa),(0x8466-0x8466),(0x4a3-0x48a))Il1_0x488d[_0xf14b({0x4d,0x6a,0x6b,0x7a,0x6d,0x51,0x78,0x78,0x6d,0x7b,0x6a},0x1e)]=Vector3[_0xf14b({0xd2,0xd9,0xcb},0xbc)]((0x6633-0x6633),(0x33e-0x33b),(0x6969-0x6969))Il1_0x488d[_0xf14b({0x28,0x0d,0x06,0x1b,0x07,0x0c,0x0c},0x69)]=Il1_0x488b Il1_0x488d[_0xf14b({0x24,0x09,0x12,0x04,0x1c,0x16,0x2a,0x0b,0x31,0x0a,0x15},0x65)]=true Il1_0x488d[_0xf14b({0x9d,0xac,0xbf,0xa8,0xa3,0xb9},0xcd)]=Il1_0x488b local Il1_0x4831=Instance[_0xf14b({0x3b,0x30,0x22},0x55)](_0xf14b({0x67,0x56,0x4b,0x47,0x7f,0x52,0x51,0x56,0x5f},0x33))Il1_0x4831[_0xf14b({0xa6,0x9c,0x8f,0x90},0xf5)]=UDim2[_0xf14b({0x26,0x2d,0x3f},0x48)]((0x1c7b-0x1c7a),(0x32c-0x32c),(0x4b6-0x4b5),(0x1c-0x1c))Il1_0x4831[_0xf14b({0xf4,0xd7,0xd5,0xdd,0xd1,0xc4,0xd9,0xc3,0xd8,0xd2,0xe2,0xc4,0xd7,0xd8,0xc5,0xc6,0xd7,0xc4,0xd3,0xd8,0xd5,0xcf},0xb6)]=(0x426e-0x426d)Il1_0x4831[_0xf14b({0x2f,0x1e,0x03,0x0f},0x7b)]=Il1_0x482c..Il1_0x4830[_0xf14b({0xc0,0xef,0xe3,0xeb},0x8e)]Il1_0x4831[_0xf14b({0x7e,0x4f,0x52,0x5e,0x69,0x45,0x46,0x45,0x58,0x19},0x2a)]=Il1_0x483f Il1_0x4831[_0xf14b({0x33,0x02,0x1f,0x13,0x34,0x13,0x15,0x08,0x0c,0x02,0x33,0x15,0x06,0x09,0x14,0x17,0x06,0x15,0x02,0x09,0x04,0x1e},0x67)]=(0x459-0x459)Il1_0x4831[_0xf14b({0x44,0x6d,0x6c,0x76},0x02)]=Enum[_0xf14b({0x2e,0x07,0x06,0x1c},0x68)][_0xf14b({0x1f,0x23,0x39,0x3e,0x2f,0x29,0x1f,0x2d,0x22,0x3f},0x4c)]Il1_0x4831[_0xf14b({0xf7,0xc6,0xdb,0xd7,0xf0,0xca,0xd9,0xc6},0xa3)]=(0x7f05-0x7ef5)Il1_0x4831[_0xf14b({0x94,0xa5,0xb6,0xa1,0xaa,0xb0},0xc4)]=Il1_0x488d end end end Il1_0x4837()local Il1_0x4855 Il1_0x4855=Il1_0x4830[_0xf14b({0x20,0x0b,0x02,0x11,0x02,0x00,0x17,0x06,0x11,0x22,0x07,0x07,0x06,0x07},0x63)]:Connect(function()wait((0x84-0x83))Il1_0x4837()end)end end else for Il1_0x4866,Il1_0x4830 in ipairs(Il1_0x4885:GetPlayers())do if Il1_0x4830[_0xf14b({0x2a,0x01,0x08,0x1b,0x08,0x0a,0x1d,0x0c,0x1b},0x69)]then local Il1_0x488b=Il1_0x4830[_0xf14b({0xe8,0xc3,0xca,0xd9,0xca,0xc8,0xdf,0xce,0xd9},0xab)]:FindFirstChild(_0xf14b({0xb3,0x9e,0x9a,0x9f},0xfb))if Il1_0x488b then for Il1_0x4866,Il1_0x4892 in ipairs(Il1_0x488b:GetChildren())do if Il1_0x4892[_0xf14b({0x77,0x58,0x54,0x5c},0x39)]:match(_0xf14b({0x73,0x63,0x4c,0x40,0x48,0x79,0x4c,0x4a},0x2d))then Il1_0x4892:Destroy()end end end end end end end function Il1_0x4834.IsNameTagsEnabled()return Il1_0x4841 end function Il1_0x4834.SetFreecam(enable,speed)enable,speed=Il1_0x487f(enable,speed)Il1_0x482a=enable if enable then Il1_0x482d=speed or(0x4f0-0x4be)local Il1_0x4891=workspace[_0xf14b({0x93,0xa5,0xa2,0xa2,0xb5,0xbe,0xa4,0x93,0xb1,0xbd,0xb5,0xa2,0xb1},0xd0)]Il1_0x4889=Il1_0x4891[_0xf14b({0x0f,0x2d,0x21,0x29,0x3e,0x2d,0x18,0x35,0x3c,0x29},0x4c)]Il1_0x4844=Il1_0x4891[_0xf14b({0x2e,0x0c,0x00,0x08,0x1f,0x0c,0x3e,0x18,0x0f,0x07,0x08,0x0e,0x19},0x6d)]Il1_0x4859=Il1_0x4891[_0xf14b({0x37,0x32,0x06,0x15,0x19,0x11},0x74)][_0xf14b({0xa4,0x9b,0x87,0x9d,0x80,0x9d,0x9b,0x9a},0xf4)]local Il1_0x488c=Il1_0x4891[_0xf14b({0x46,0x43,0x77,0x64,0x68,0x60},0x05)][_0xf14b({0x01,0x22,0x22,0x26,0x1b,0x28,0x2e,0x39,0x22,0x3f},0x4d)]Il1_0x4869=math[_0xf14b({0x56,0x43,0x56,0x59,0x05},0x37)](-Il1_0x488c[_0xf14b({0xe5},0xbd)],-Il1_0x488c[_0xf14b({0x06},0x5c)])Il1_0x483d=math[_0xf14b({0xa9,0xbb,0xa1,0xa6},0xc8)](math[_0xf14b({0x69,0x66,0x6b,0x67,0x7a},0x0a)](Il1_0x488c[_0xf14b({0x40},0x19)],-((0x3*0x0)+0x1),(0x2a3c-0x2a3b)))Il1_0x4836=nil Il1_0x4891[_0xf14b({0xdb,0xf9,0xf5,0xfd,0xea,0xf9,0xcc,0xe1,0xe8,0xfd},0x98)]=Enum[_0xf14b({0x97,0xb5,0xb9,0xb1,0xa6,0xb5,0x80,0xad,0xa4,0xb1},0xd4)][_0xf14b({0x4c,0x7c,0x6d,0x76,0x6f,0x6b,0x7e,0x7d,0x73,0x7a},0x1f)]if Il1_0x4863 then Il1_0x4863:Disconnect()end Il1_0x4863=Il1_0x488a[_0xf14b({0x63,0x44,0x5a,0x5f,0x5e,0x68,0x4f,0x4d,0x4b,0x44},0x2a)]:Connect(function(Il1_0x4835,Il1_0x486a)if Il1_0x486a then return end if not Il1_0x482a then return end if Il1_0x4835[_0xf14b({0x8f,0xa9,0xbf,0xa8,0x93,0xb4,0xaa,0xaf,0xae,0x8e,0xa3,0xaa,0xbf},0xda)]==Enum[_0xf14b({0xcf,0xe9,0xff,0xe8,0xd3,0xf4,0xea,0xef,0xee,0xce,0xe3,0xea,0xff},0x9a)][_0xf14b({0x57,0x75,0x6f,0x69,0x7f,0x58,0x6f,0x6e,0x6e,0x75,0x74,0x28},0x1a)]then if Il1_0x4836 then Il1_0x4836=nil return end local Il1_0x4891=workspace[_0xf14b({0xa2,0x94,0x93,0x93,0x84,0x8f,0x95,0xa2,0x80,0x8c,0x84,0x93,0x80},0xe1)]local Il1_0x4849=Vector2[_0xf14b({0xd8,0xd3,0xc1},0xb6)](Il1_0x4891[_0xf14b({0xee,0xd1,0xdd,0xcf,0xc8,0xd7,0xca,0xcc,0xeb,0xd1,0xc2,0xdd},0xb8)][_0xf14b({0x88},0xd0)]/(0x35a-0x358),Il1_0x4891[_0xf14b({0x66,0x59,0x55,0x47,0x40,0x5f,0x42,0x44,0x63,0x59,0x4a,0x55},0x30)][_0xf14b({0x1a},0x43)]/((0x9*0x0)+0x2))local Il1_0x4823=Il1_0x4891:ViewportPointToRay(Il1_0x4849[_0xf14b({0xcb},0x93)],Il1_0x4849[_0xf14b({0xbe},0xe7)])local Il1_0x485e=RaycastParams[_0xf14b({0xc6,0xcd,0xdf},0xa8)]()Il1_0x485e[_0xf14b({0xa3,0x8c,0x89,0x91,0x80,0x97,0xb1,0x9c,0x95,0x80},0xe5)]=Enum[_0xf14b({0x13,0x20,0x38,0x22,0x20,0x32,0x35,0x07,0x28,0x2d,0x35,0x24,0x33,0x15,0x38,0x31,0x24},0x41)][_0xf14b({0x3a,0x07,0x1c,0x13,0x0a,0x1b,0x1a},0x7f)]local Il1_0x4843=Il1_0x484c()Il1_0x485e[_0xf14b({0x38,0x17,0x12,0x0a,0x1b,0x0c,0x3a,0x1b,0x0d,0x1d,0x1b,0x10,0x1a,0x1f,0x10,0x0a,0x0d,0x37,0x10,0x0d,0x0a,0x1f,0x10,0x1d,0x1b,0x0d},0x7e)]=Il1_0x4843 and{Il1_0x4843}or{}local Il1_0x486f=workspace:Raycast(Il1_0x4823[_0xf14b({0x28,0x15,0x0e,0x00,0x0e,0x09},0x67)],Il1_0x4823[_0xf14b({0x39,0x14,0x0f,0x18,0x1e,0x09,0x14,0x12,0x13},0x7d)]*(0x24b+0x19d),Il1_0x485e)if Il1_0x486f and Il1_0x486f[_0xf14b({0xd4,0xf3,0xee,0xe9,0xfc,0xf3,0xfe,0xf8},0x9d)]then local Il1_0x4845=Il1_0x486f[_0xf14b({0x03,0x24,0x39,0x3e,0x2b,0x24,0x29,0x2f},0x4a)]:FindFirstAncestorOfClass(_0xf14b({0xa8,0x8a,0x81,0x80,0x89},0xe5))if Il1_0x4845 then local Il1_0x485c=Il1_0x4845:FindFirstChildOfClass(_0xf14b({0xd6,0xeb,0xf3,0xff,0xf0,0xf1,0xf7,0xfa},0x9e))if Il1_0x485c and Il1_0x485c[_0xf14b({0x23,0x0e,0x0a,0x07,0x1f,0x03},0x6b)]>((0x7*0x0)+0x0)then Il1_0x4836=Il1_0x4845 end end end end end)if Il1_0x4856 then Il1_0x4856:Disconnect()end Il1_0x4856=Il1_0x486b[_0xf14b({0x88,0xbf,0xb4,0xbe,0xbf,0xa8,0x89,0xae,0xbf,0xaa,0xaa,0xbf,0xbe},0xda)]:Connect(function(dt)if not Il1_0x482a then return end local Il1_0x4891=workspace[_0xf14b({0x61,0x57,0x50,0x50,0x47,0x4c,0x56,0x61,0x43,0x4f,0x47,0x50,0x43},0x22)]if Il1_0x4836 and Il1_0x4836[_0xf14b({0xeb,0xda,0xc9,0xde,0xd5,0xcf},0xbb)]then local Il1_0x4822=Il1_0x4836:FindFirstChild(_0xf14b({0xe5,0xd8,0xc0,0xcc,0xc3,0xc2,0xc4,0xc9,0xff,0xc2,0xc2,0xd9,0xfd,0xcc,0xdf,0xd9},0xad))or Il1_0x4836:FindFirstChild(_0xf14b({0x04,0x3f,0x22,0x23,0x3f},0x50))or Il1_0x4836:FindFirstChild(_0xf14b({0x57,0x72,0x72,0x67,0x70,0x56,0x6d,0x70,0x71,0x6d},0x02))if Il1_0x4822 then local Il1_0x484a=Il1_0x488a:GetMouseDelta()Il1_0x4869=Il1_0x4869-Il1_0x484a[_0xf14b({0x32},0x6a)]*0.003 Il1_0x483d=math[_0xf14b({0xc7,0xc8,0xc5,0xc9,0xd4},0xa4)](Il1_0x483d-Il1_0x484a[_0xf14b({0x16},0x4f)]*0.003,-1.2,1.2)local Il1_0x4877=CFrame[_0xf14b({0xea,0xc5,0xcc,0xc7,0xce,0xd8},0xab)](((0x9*0x0)+0x0),Il1_0x4869,((0x7*0x0)+0x0))*CFrame[_0xf14b({0x09,0x26,0x2f,0x24,0x2d,0x3b},0x48)](Il1_0x483d,(0x477-0x477),((0x2*0x0)+0x0))local Il1_0x487a=Il1_0x4877:VectorToWorldSpace(Vector3[_0xf14b({0x67,0x6c,0x7e},0x09)]((0x7bbe-0x7bbe),(0x4d94-0x4d91),(0x8802-0x87f6)))Il1_0x4891[_0xf14b({0x34,0x31,0x05,0x16,0x1a,0x12},0x77)]=CFrame[_0xf14b({0xbc,0xb7,0xa5},0xd2)](Il1_0x4822[_0xf14b({0x6a,0x55,0x49,0x53,0x4e,0x53,0x55,0x54},0x3a)]+Il1_0x487a,Il1_0x4822[_0xf14b({0x81,0xbe,0xa2,0xb8,0xa5,0xb8,0xbe,0xbf},0xd1)])Il1_0x4859=Il1_0x4891[_0xf14b({0x44,0x41,0x75,0x66,0x6a,0x62},0x07)][_0xf14b({0x31,0x0e,0x12,0x08,0x15,0x08,0x0e,0x0f},0x61)]return else Il1_0x4836=nil end end local Il1_0x484a=Il1_0x488a:GetMouseDelta()Il1_0x4869=Il1_0x4869-Il1_0x484a[_0xf14b({0x53},0x0b)]*0.003 Il1_0x483d=math[_0xf14b({0xb1,0xbe,0xb3,0xbf,0xa2},0xd2)](Il1_0x483d-Il1_0x484a[_0xf14b({0x5d},0x04)]*0.003,-math[_0xf14b({0xf7,0xee},0x87)]/(0xefa-0xef8)+0.01,math[_0xf14b({0x79,0x60},0x09)]/((0xf*0x0)+0x2)-0.01)local Il1_0x4867=CFrame[_0xf14b({0x31,0x1e,0x17,0x1c,0x15,0x03},0x70)]((0x48e5-0x48e5),Il1_0x4869,(0x179-0x179))*CFrame[_0xf14b({0x0b,0x24,0x2d,0x26,0x2f,0x39},0x4a)](Il1_0x483d,(0x902b-0x902b),(0x15f-0x15f))local Il1_0x4824=Vector3[_0xf14b({0xae,0xa5,0xb7},0xc0)](((0xa*0x0)+0x0),(0xbdf-0xbdf),(0x20c0-0x20c0))if Il1_0x488a:IsKeyDown(Enum[_0xf14b({0x49,0x67,0x7b,0x41,0x6d,0x66,0x67},0x02)][_0xf14b({0x4d},0x1a)])then Il1_0x4824=Il1_0x4824+Il1_0x4867[_0xf14b({0xeb,0xc8,0xc8,0xcc,0xf1,0xc2,0xc4,0xd3,0xc8,0xd5},0xa7)]end if Il1_0x488a:IsKeyDown(Enum[_0xf14b({0x70,0x5e,0x42,0x78,0x54,0x5f,0x5e},0x3b)][_0xf14b({0x0e},0x5d)])then Il1_0x4824=Il1_0x4824-Il1_0x4867[_0xf14b({0x40,0x63,0x63,0x67,0x5a,0x69,0x6f,0x78,0x63,0x7e},0x0c)]end if Il1_0x488a:IsKeyDown(Enum[_0xf14b({0x8e,0xa0,0xbc,0x86,0xaa,0xa1,0xa0},0xc5)][_0xf14b({0xe3},0xa2)])then Il1_0x4824=Il1_0x4824-Il1_0x4867[_0xf14b({0x9b,0xa0,0xae,0xa1,0xbd,0x9f,0xac,0xaa,0xbd,0xa6,0xbb},0xc9)]end if Il1_0x488a:IsKeyDown(Enum[_0xf14b({0xcd,0xe3,0xff,0xc5,0xe9,0xe2,0xe3},0x86)][_0xf14b({0x4d},0x09)])then Il1_0x4824=Il1_0x4824+Il1_0x4867[_0xf14b({0xb6,0x8d,0x83,0x8c,0x90,0xb2,0x81,0x87,0x90,0x8b,0x96},0xe4)]end if Il1_0x488a:IsKeyDown(Enum[_0xf14b({0x68,0x46,0x5a,0x60,0x4c,0x47,0x46},0x23)][_0xf14b({0x00,0x23,0x32,0x30,0x36},0x53)])then Il1_0x4824=Il1_0x4824+Vector3[_0xf14b({0x9b,0x90,0x82},0xf5)]((0x7a94-0x7a94),(0x20e6-0x20e5),(0x1795-0x1795))end if Il1_0x488a:IsKeyDown(Enum[_0xf14b({0x1f,0x31,0x2d,0x17,0x3b,0x30,0x31},0x54)][_0xf14b({0x27,0x0e,0x0d,0x1f,0x28,0x04,0x05,0x1f,0x19,0x04,0x07},0x6b)])then Il1_0x4824=Il1_0x4824-Vector3[_0xf14b({0x72,0x79,0x6b},0x1c)](((0xd*0x0)+0x0),((0x2*0x0)+0x1),(0x7163-0x7163))end if Il1_0x4824[_0xf14b({0x19,0x35,0x33,0x3a,0x3d,0x20,0x21,0x30,0x31},0x54)]>((0x4*0x0)+0x0)then Il1_0x4824=Il1_0x4824[_0xf14b({0x8e,0xb5,0xb2,0xaf},0xdb)]end Il1_0x4859=Il1_0x4859+(Il1_0x4824*Il1_0x482d*dt)Il1_0x4891[_0xf14b({0x22,0x27,0x13,0x00,0x0c,0x04},0x61)]=CFrame[_0xf14b({0x1d,0x16,0x04},0x73)](Il1_0x4859)*Il1_0x4867 end)else if Il1_0x4856 then Il1_0x4856:Disconnect()Il1_0x4856=nil end if Il1_0x4863 then Il1_0x4863:Disconnect()Il1_0x4863=nil end Il1_0x4836=nil local Il1_0x4891=workspace[_0xf14b({0x65,0x53,0x54,0x54,0x43,0x48,0x52,0x65,0x47,0x4b,0x43,0x54,0x47},0x26)]Il1_0x4891[_0xf14b({0x10,0x32,0x3e,0x36,0x21,0x32,0x07,0x2a,0x23,0x36},0x53)]=Il1_0x4889 or Enum[_0xf14b({0xa0,0x82,0x8e,0x86,0x91,0x82,0xb7,0x9a,0x93,0x86},0xe3)][_0xf14b({0x82,0xb4,0xb2,0xb5,0xae,0xac},0xc1)]Il1_0x4891[_0xf14b({0x95,0xb7,0xbb,0xb3,0xa4,0xb7,0x85,0xa3,0xb4,0xbc,0xb3,0xb5,0xa2},0xd6)]=Il1_0x4844 end end function Il1_0x4834.IsFreecamEnabled()return Il1_0x482a end function Il1_0x4834.GetFreecamPossessed()return Il1_0x4836 end function Il1_0x4834.SetSpectator(enable,Il1_0x4830)enable,Il1_0x4830=Il1_0x487f(enable,Il1_0x4830)Il1_0x4840=enable if enable then if not Il1_0x4830 then warn(_0xf14b({0x9d,0x3f,0x64,0x79,0xb0,0xfe,0xbd,0xb6,0x3f,0x65,0x57,0xfe,0x1a,0x4f,0x3f,0x65,0x55,0xb0,0xb6,0xfe,0xae,0xb2,0xbf,0xa7,0xbb,0xac,0xfe,0x1a,0x4f,0x3f,0x65,0x5d,0xfe,0xad,0xae,0xbb,0xbd,0xaa,0xbf,0xaa,0xbb},0xde))return end if Il1_0x4830==Il1_0x4883 then warn(_0xf14b({0x2e,0x0d,0xa6,0xd1,0x0b,0x02,0x45,0x11,0x0d,0x84,0xde,0xe6,0x45,0x16,0x15,0x00,0x06,0x11,0x04,0x11,0x00,0x45,0x06,0x0d,0xa6,0xc8,0x0b,0x0d,0x45,0x08,0xa6,0xc9,0x0b,0x0d},0x65))return end Il1_0x4879=Il1_0x4830 local Il1_0x4891=workspace[_0xf14b({0x3c,0x0a,0x0d,0x0d,0x1a,0x11,0x0b,0x3c,0x1e,0x12,0x1a,0x0d,0x1e},0x7f)]Il1_0x4851=Il1_0x4891[_0xf14b({0x85,0xa7,0xab,0xa3,0xb4,0xa7,0x92,0xbf,0xb6,0xa3},0xc6)]Il1_0x4873=Il1_0x4891[_0xf14b({0xd6,0xf4,0xf8,0xf0,0xe7,0xf4,0xc6,0xe0,0xf7,0xff,0xf0,0xf6,0xe1},0x95)]Il1_0x4891[_0xf14b({0x00,0x22,0x2e,0x26,0x31,0x22,0x17,0x3a,0x33,0x26},0x43)]=Enum[_0xf14b({0x5e,0x7c,0x70,0x78,0x6f,0x7c,0x49,0x64,0x6d,0x78},0x1d)][_0xf14b({0xa9,0x9f,0x99,0x9e,0x85,0x87},0xea)]local Il1_0x4871=Il1_0x4830[_0xf14b({0x69,0x42,0x4b,0x58,0x4b,0x49,0x5e,0x4f,0x58},0x2a)]if Il1_0x4871 then local Il1_0x485c=Il1_0x4871:FindFirstChildOfClass(_0xf14b({0xaa,0x97,0x8f,0x83,0x8c,0x8d,0x8b,0x86},0xe2))if Il1_0x485c then Il1_0x4891[_0xf14b({0x69,0x4b,0x47,0x4f,0x58,0x4b,0x79,0x5f,0x48,0x40,0x4f,0x49,0x5e},0x2a)]=Il1_0x485c end end if Il1_0x4862 then Il1_0x4862:Disconnect()end Il1_0x4862=Il1_0x4830[_0xf14b({0x1a,0x31,0x38,0x2b,0x38,0x3a,0x2d,0x3c,0x2b,0x18,0x3d,0x3d,0x3c,0x3d},0x59)]:Connect(function(newChar)if not Il1_0x4840 then return end task[_0xf14b({0xe4,0xf2,0xfa,0xe7},0x93)](0.5)local Il1_0x485c=newChar:FindFirstChildOfClass(_0xf14b({0x87,0xba,0xa2,0xae,0xa1,0xa0,0xa6,0xab},0xcf))if Il1_0x485c then workspace[_0xf14b({0x19,0x2f,0x28,0x28,0x3f,0x34,0x2e,0x19,0x3b,0x37,0x3f,0x28,0x3b},0x5a)][_0xf14b({0xaf,0x8d,0x81,0x89,0x9e,0x8d,0xbf,0x99,0x8e,0x86,0x89,0x8f,0x98},0xec)]=Il1_0x485c end end)else if Il1_0x4862 then Il1_0x4862:Disconnect()Il1_0x4862=nil end Il1_0x4879=nil local Il1_0x4891=workspace[_0xf14b({0x53,0x65,0x62,0x62,0x75,0x7e,0x64,0x53,0x71,0x7d,0x75,0x62,0x71},0x10)]Il1_0x4891[_0xf14b({0x35,0x17,0x1b,0x13,0x04,0x17,0x22,0x0f,0x06,0x13},0x76)]=Il1_0x4851 or Enum[_0xf14b({0xf8,0xda,0xd6,0xde,0xc9,0xda,0xef,0xc2,0xcb,0xde},0xbb)][_0xf14b({0xa9,0x9f,0x99,0x9e,0x85,0x87},0xea)]local Il1_0x4843=Il1_0x484c()if Il1_0x4843 then local Il1_0x4888=Il1_0x4843:FindFirstChildOfClass(_0xf14b({0x2d,0x10,0x08,0x04,0x0b,0x0a,0x0c,0x01},0x65))Il1_0x4891[_0xf14b({0xb1,0x93,0x9f,0x97,0x80,0x93,0xa1,0x87,0x90,0x98,0x97,0x91,0x86},0xf2)]=Il1_0x4888 or Il1_0x4873 else Il1_0x4891[_0xf14b({0xa5,0x87,0x8b,0x83,0x94,0x87,0xb5,0x93,0x84,0x8c,0x83,0x85,0x92},0xe6)]=Il1_0x4873 end end end function Il1_0x4834.IsSpectatorEnabled()return Il1_0x4840 end function Il1_0x4834.GetSpectatorTarget()return Il1_0x4879 end function Il1_0x4834.SpectateNext()if not Il1_0x4840 then return end local Il1_0x4847=Il1_0x4885:GetPlayers()if#Il1_0x4847<=(0x408-0x407)then return end local Il1_0x4828=(0x8e-0x8e)for Il1_0x486d,Il1_0x4884 in ipairs(Il1_0x4847)do if Il1_0x4884==Il1_0x4879 then Il1_0x4828=Il1_0x486d break end end local Il1_0x4875=Il1_0x4828 for Il1_0x4866=((0xc*0x0)+0x1),#Il1_0x4847 do Il1_0x4875=(Il1_0x4875%#Il1_0x4847)+(0x2421-0x2420)if Il1_0x4847[Il1_0x4875]~=Il1_0x4883 then break end end Il1_0x4834[_0xf14b({0x3b,0x0d,0x1c,0x3b,0x18,0x0d,0x0b,0x1c,0x09,0x1c,0x07,0x1a},0x68)](true,Il1_0x4847[Il1_0x4875])end function Il1_0x4834.SpectatePrev()if not Il1_0x4840 then return end local Il1_0x4847=Il1_0x4885:GetPlayers()if#Il1_0x4847<=(0x538d-0x538c)then return end local Il1_0x4828=(0x898b-0x898b)for Il1_0x486d,Il1_0x4884 in ipairs(Il1_0x4847)do if Il1_0x4884==Il1_0x4879 then Il1_0x4828=Il1_0x486d break end end local Il1_0x4846=Il1_0x4828 for Il1_0x4866=(0x2a-0x29),#Il1_0x4847 do Il1_0x4846=((Il1_0x4846-(0x46a8-0x46a6))%#Il1_0x4847)+((0xb*0x0)+0x1)if Il1_0x4847[Il1_0x4846]~=Il1_0x4883 then break end end Il1_0x4834[_0xf14b({0x96,0xa0,0xb1,0x96,0xb5,0xa0,0xa6,0xb1,0xa4,0xb1,0xaa,0xb7},0xc5)](true,Il1_0x4847[Il1_0x4846])end function Il1_0x4834.Cleanup()Il1_0x4834[_0xf14b({0xad,0x9b,0x8a,0xad,0x8e,0x9b,0x9b,0x9a},0xfe)](false)Il1_0x4834[_0xf14b({0x46,0x70,0x61,0x46,0x65,0x70,0x70,0x71,0x58,0x60,0x79,0x61,0x7c,0x65,0x79,0x7c,0x70,0x67},0x15)](false)Il1_0x4834[_0xf14b({0x30,0x06,0x17,0x29,0x16,0x0e,0x13,0x33,0x0c,0x14,0x06,0x11},0x63)](false)Il1_0x4834[_0xf14b({0x72,0x44,0x55,0x6b,0x54,0x4c,0x51,0x71,0x4e,0x56,0x44,0x53,0x6c,0x54,0x4d,0x55,0x48,0x51,0x4d,0x48,0x44,0x53},0x21)](false)Il1_0x4834[_0xf14b({0xa0,0x96,0x87,0xb5,0x9f,0x8a},0xf3)](false)Il1_0x4834[_0xf14b({0x4f,0x79,0x68,0x52,0x73,0x7f,0x70,0x75,0x6c},0x1c)](false)Il1_0x4834[_0xf14b({0xad,0x9b,0x8a,0xb0,0x91,0xbd,0x92,0x97,0x8e,0xbd,0x9f,0x93},0xfe)](false)Il1_0x4834[_0xf14b({0xcf,0xf9,0xe8,0xdf,0xfd,0xf1,0xd8,0xf5,0xef,0xe8,0xfd,0xf2,0xff,0xf9},0x9c)](false)Il1_0x4834[_0xf14b({0xbf,0x89,0x98,0xb8,0x85,0x81,0x89,0xa1,0x8d,0x82,0x8d,0x8b,0x89,0x9e},0xec)](false)Il1_0x4834[_0xf14b({0x10,0x26,0x37,0x0d,0x2c,0x05,0x2c,0x24},0x43)](false)Il1_0x4834[_0xf14b({0xdd,0xeb,0xfa,0xc7,0xe0,0xfd,0xfa,0xef,0xe0,0xfa,0xde,0xfc,0xe1,0xe3,0xfe,0xfa,0xfd},0x8e)](false)Il1_0x4834[_0xf14b({0x4e,0x78,0x69,0x5c,0x73,0x69,0x74,0x5c,0x5b,0x56},0x1d)](false)Il1_0x4834[_0xf14b({0x27,0x11,0x00,0x32,0x24,0x27,0x21,0x1a,0x18,0x1b,0x17,0x1f,0x11,0x06},0x74)](false)Il1_0x4834[_0xf14b({0x8d,0xbb,0xaa,0x90,0xbf,0xb3,0xbb,0x8a,0xbf,0xb9,0xad},0xde)](false)Il1_0x4834[_0xf14b({0x6c,0x5a,0x4b,0x76,0x51,0x59,0x75,0x4a,0x52,0x4f},0x3f)](false)Il1_0x4834[_0xf14b({0xcb,0xfd,0xec,0xde,0xea,0xfd,0xfd,0xfb,0xf9,0xf5},0x98)](false)Il1_0x4834[_0xf14b({0x8e,0xb8,0xa9,0x8e,0xad,0xb8,0xbe,0xa9,0xbc,0xa9,0xb2,0xaf},0xdd)](false)end return Il1_0x4834 end)(...)
+    Cách sử dụng:
+        local Misc = require(https://raw.githubusercontent.com/WiniFyCode/Roblox/refs/heads/main/libs/Misc.lua)
+
+        -- Speed hack
+        Misc:SetSpeed(true, 50)  -- Tốc độ 50 (mặc định 16)
+        Misc:SetSpeed(false)
+
+        -- Speed Multiplier
+        Misc:SetSpeedMultiplier(true, 3)
+        Misc:SetSpeedMultiplier(false)
+
+        -- Jump power
+        Misc:SetJumpPower(true, 100)
+        Misc:SetJumpPower(false)
+
+        -- Jump Power Multiplier
+        Misc:SetJumpPowerMultiplier(true, 5)
+        Misc:SetJumpPowerMultiplier(false)
+
+        -- Fly
+        Misc:SetFly(true, 50)
+        Misc:SetFly(false)
+
+        -- Noclip
+        Misc:SetNoclip(true)
+        Misc:SetNoclip(false)
+
+        -- NoClip Camera
+        Misc:SetNoClipCam(true)
+        Misc:SetNoClipCam(false)
+
+        -- Camera Distance
+        Misc:SetCamDistance(true, 50)
+        Misc:SetCamDistance(false)
+
+        -- Infinite Jump
+        Misc:SetInfJump(true)
+        Misc:SetInfJump(false)
+
+        -- Time Manager
+        Misc:SetTimeManager(true, 12)
+        Misc:SetTimeManager(false)
+
+        -- No Fog
+        Misc:SetNoFog(true)
+        Misc:SetNoFog(false)
+
+        -- Instant Proximity Prompts
+        Misc:SetInstantPrompts(true)
+        Misc:SetInstantPrompts(false)
+
+        -- Anti AFK
+        Misc:SetAntiAFK(true)
+        Misc:SetAntiAFK(false)
+
+        -- FPS Unlocker
+        Misc:SetFPSUnlocker(true)
+        Misc:SetFPSUnlocker(false)
+
+        -- Name Tags
+        Misc:SetNameTags(true, "[VIP] ", Color3.fromRGB(255, 215, 0))
+        Misc:SetNameTags(false)
+
+        -- Freecam (camera tự do, chuột phải để nhập vào player/model)
+        Misc:SetFreecam(true, 50)   -- Bật freecam, tốc độ 50
+        Misc:SetFreecam(false)       -- Tắt freecam
+
+        -- Spectator (theo dõi camera player khác)
+        Misc:SetSpectator(true, targetPlayer)  -- Spectate player
+        Misc:SpectateNext()                    -- Chuyển sang player tiếp theo
+        Misc:SpectatePrev()                    -- Chuyển sang player trước đó
+        Misc:SetSpectator(false)               -- Tắt spectate
+--]]
+
+local Misc = {}
+Misc.__index = Misc
+
+-- Services
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local ContextActionService = game:GetService("ContextActionService")
+local LocalPlayer = Players.LocalPlayer
+
+-- State variables
+local speedEnabled = false
+local speedValue = 50
+local speedMultiplierEnabled = false
+local speedMultiplierValue = 1.0
+
+local jumpPowerEnabled = false
+local jumpPowerValue = 100
+local jumpPowerMultiplierEnabled = false
+local jumpPowerMultiplierValue = 1.0
+
+local flyEnabled = false
+local flySpeed = 50
+local flyBodyVelocity = nil
+local flyBodyGyro = nil
+local flyRenderConn = nil
+local flyCharConn = nil
+
+local noclipEnabled = false
+local noclipConn = nil
+
+local noClipCamEnabled = false
+local noClipCamConn = nil
+local camDistanceConn = nil
+local camDistanceEnabled = false
+local camDistanceValue = 0.5
+
+-- Trạng thái Quản lý thời gian (Time Manager)
+local timeManagerEnabled = false
+local timeManagerHour = 12
+local originalClockTime = nil
+local lightingConn = nil
+local lightingChangeConn = nil
+local isApplyingTime = false
+
+-- Trạng thái Xóa sương mù (No Fog)
+local noFogEnabled = false
+local fogConn = nil
+local fogDescendantConn = nil
+local originalLightingFog = nil
+local originalAtmospheres = {}
+local originalDoFs = {}
+
+-- Trạng thái Sáng toàn cảnh (Fullbright)
+local fullbrightEnabled = false
+local fullbrightConn = nil
+local fullbrightLight = nil
+local originalLightingSettings = nil
+
+local instantPromptsEnabled = false
+
+local antiAFKEnabled = false
+local antiAFKConn = nil
+local antiAFKTick = 0
+
+local fpsUnlockerEnabled = false
+local fpsUnlockerConn = nil
+
+local nameTagsEnabled = false
+local nameTagsPrefix = ""
+local nameTagsColor = Color3.new(1, 1, 1)
+
+local infJumpEnabled = false
+local infJumpConn = nil
+
+-- Freecam state
+local freecamEnabled = false
+local freecamSpeed = 50
+local freecamConn = nil
+local freecamRightClickConn = nil
+local freecamYaw = 0
+local freecamPitch = 0
+local freecamPosition = nil  -- Vector3 vị trí camera tự do
+local freecamPossessed = nil -- Model đang được possess (chuột phải)
+local freecamOriginalCameraType = nil
+local freecamOriginalCameraSubject = nil
+local freecamOriginalAnchored = false
+
+-- Spectator state
+local spectatorEnabled = false
+local spectatorTarget = nil -- Player đang spectate
+local spectatorConn = nil   -- Kết nối CharacterAdded
+local spectatorOriginalCameraType = nil
+local spectatorOriginalCameraSubject = nil
+
+-- Lấy nhân vật local
+local function getCharacter()
+    return LocalPlayer.Character or workspace:FindFirstChild(LocalPlayer.Name)
+end
+
+local function getHumanoid()
+    local char = getCharacter()
+    if char then
+        return char:FindFirstChildOfClass("Humanoid")
+    end
+    return nil
+end
+
+local function normalizeCall(first, ...)
+    if first == Misc then
+        return ...
+    end
+    return first, ...
+end
+
+-- SpeedHack - Tăng tốc độ di chuyển
+function Misc.SetSpeed(enable, speed)
+    enable, speed = normalizeCall(enable, speed)
+    speedEnabled = enable
+    if enable then
+        speedValue = speed or 50
+        local humanoid = getHumanoid()
+        if humanoid then
+            humanoid.WalkSpeed = speedValue
+        end
+        -- Theo dõi nhân vật thay đổi
+        local function onCharacterAdded()
+            local hum = getHumanoid()
+            if hum then
+                hum.WalkSpeed = speedValue
+            end
+        end
+        LocalPlayer.CharacterAdded:Connect(onCharacterAdded)
+    else
+        local humanoid = getHumanoid()
+        if humanoid then
+            humanoid.WalkSpeed = 16 -- Giá trị mặc định
+        end
+    end
+end
+
+function Misc.IsSpeedEnabled()
+    return speedEnabled
+end
+
+-- Speed Multiplier - Nhân hệ số WalkSpeed (mặc định 16)
+function Misc.SetSpeedMultiplier(enable, multiplier)
+    enable, multiplier = normalizeCall(enable, multiplier)
+    speedMultiplierEnabled = enable
+    if enable then
+        speedMultiplierValue = multiplier or 3
+        local humanoid = getHumanoid()
+        if humanoid then
+            humanoid.WalkSpeed = 16 * speedMultiplierValue
+        end
+        local function onCharacterAdded()
+            local hum = getHumanoid()
+            if hum then
+                hum.WalkSpeed = 16 * speedMultiplierValue
+            end
+        end
+        LocalPlayer.CharacterAdded:Connect(onCharacterAdded)
+    else
+        local humanoid = getHumanoid()
+        if humanoid and not speedEnabled then
+            humanoid.WalkSpeed = 16
+        elseif humanoid and speedEnabled then
+            humanoid.WalkSpeed = speedValue
+        end
+    end
+end
+
+function Misc.IsSpeedMultiplierEnabled()
+    return speedMultiplierEnabled
+end
+
+-- JumpPower - Tăng sức nhảy
+function Misc.SetJumpPower(enable, power)
+    enable, power = normalizeCall(enable, power)
+    jumpPowerEnabled = enable
+    if enable then
+        jumpPowerValue = power or 100
+        local humanoid = getHumanoid()
+        if humanoid then
+            humanoid.JumpPower = jumpPowerValue
+        end
+        local function onCharacterAdded()
+            local hum = getHumanoid()
+            if hum then
+                hum.JumpPower = jumpPowerValue
+            end
+        end
+        LocalPlayer.CharacterAdded:Connect(onCharacterAdded)
+    else
+        local humanoid = getHumanoid()
+        if humanoid then
+            humanoid.JumpPower = 50 -- Giá trị mặc định
+        end
+    end
+end
+
+function Misc.IsJumpPowerEnabled()
+    return jumpPowerEnabled
+end
+
+-- Jump Power Multiplier - Nhân hệ số JumpPower (mặc định 50)
+function Misc.SetJumpPowerMultiplier(enable, multiplier)
+    enable, multiplier = normalizeCall(enable, multiplier)
+    jumpPowerMultiplierEnabled = enable
+    if enable then
+        jumpPowerMultiplierValue = multiplier or 5
+        local humanoid = getHumanoid()
+        if humanoid then
+            humanoid.JumpPower = 50 * jumpPowerMultiplierValue
+        end
+        local function onCharacterAdded()
+            local hum = getHumanoid()
+            if hum then
+                hum.JumpPower = 50 * jumpPowerMultiplierValue
+            end
+        end
+        LocalPlayer.CharacterAdded:Connect(onCharacterAdded)
+    else
+        local humanoid = getHumanoid()
+        if humanoid and not jumpPowerEnabled then
+            humanoid.JumpPower = 50
+        elseif humanoid and jumpPowerEnabled then
+            humanoid.JumpPower = jumpPowerValue
+        end
+    end
+end
+
+function Misc.IsJumpPowerMultiplierEnabled()
+    return jumpPowerMultiplierEnabled
+end
+
+-- Dọn dẹp đối tượng vật lý của Fly
+local function cleanupFlyPhysics()
+    if flyBodyVelocity then
+        pcall(function() flyBodyVelocity:Destroy() end)
+        flyBodyVelocity = nil
+    end
+    if flyBodyGyro then
+        pcall(function() flyBodyGyro:Destroy() end)
+        flyBodyGyro = nil
+    end
+    local humanoid = getHumanoid()
+    if humanoid then
+        humanoid.PlatformStand = false
+    end
+end
+
+-- Khởi tạo đối tượng BodyVelocity và BodyGyro cho nhân vật
+local function setupFlyPhysics()
+    cleanupFlyPhysics()
+
+    local char = getCharacter()
+    if not char then return end
+
+    local rootPart = char:FindFirstChild("HumanoidRootPart") or char:FindFirstChild("Torso")
+    local humanoid = char:FindFirstChildOfClass("Humanoid")
+    if not rootPart or not humanoid then return end
+
+    -- Khóa trạng thái hoạt ảnh đi bộ/ngã để bay mượt mà
+    humanoid.PlatformStand = true
+
+    -- Tạo BodyVelocity cung cấp lực đẩy
+    flyBodyVelocity = Instance.new("BodyVelocity")
+    flyBodyVelocity.Name = "FlyVelocity"
+    flyBodyVelocity.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+    flyBodyVelocity.Velocity = Vector3.new(0, 0, 0)
+    flyBodyVelocity.Parent = rootPart
+
+    -- Tạo BodyGyro giữ thăng bằng và xoay theo hướng Camera
+    flyBodyGyro = Instance.new("BodyGyro")
+    flyBodyGyro.Name = "FlyGyro"
+    flyBodyGyro.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
+    flyBodyGyro.P = 9e4
+    flyBodyGyro.CFrame = rootPart.CFrame
+    flyBodyGyro.Parent = rootPart
+end
+
+-- Fly - Cho phép bay tự do theo hướng nhìn của Camera
+function Misc.SetFly(enable, speed)
+    enable, speed = normalizeCall(enable, speed)
+    if speed then
+        flySpeed = speed
+    end
+
+    if enable then
+        if flyEnabled then
+            -- Nếu đang bay thì chỉ cập nhật tốc độ, không reset lại physics
+            return
+        end
+        flyEnabled = true
+
+        setupFlyPhysics()
+
+        -- Tự động kích hoạt lại khi nhân vật hồi sinh
+        if flyCharConn then flyCharConn:Disconnect() end
+        flyCharConn = LocalPlayer.CharacterAdded:Connect(function()
+            if not flyEnabled then return end
+            task.wait(0.5)
+            setupFlyPhysics()
+        end)
+
+        -- Vòng lặp cập nhật chuyển động mỗi frame
+        if flyRenderConn then flyRenderConn:Disconnect() end
+        flyRenderConn = RunService.RenderStepped:Connect(function()
+            if not flyEnabled then
+                if flyRenderConn then
+                    flyRenderConn:Disconnect()
+                    flyRenderConn = nil
+                end
+                cleanupFlyPhysics()
+                return
+            end
+
+            local char = getCharacter()
+            if not char or not char.Parent then return end
+
+            local rootPart = char:FindFirstChild("HumanoidRootPart") or char:FindFirstChild("Torso")
+            local humanoid = char:FindFirstChildOfClass("Humanoid")
+            if not rootPart or not humanoid then return end
+
+            -- Kiểm tra nếu vật thể bay bị mất thì tạo lại
+            if not flyBodyVelocity or not flyBodyVelocity.Parent or not flyBodyGyro or not flyBodyGyro.Parent then
+                setupFlyPhysics()
+                return
+            end
+
+            humanoid.PlatformStand = true
+
+            local cam = workspace.CurrentCamera
+            if not cam then return end
+
+            -- Cố định góc xoay nhân vật theo Camera
+            flyBodyGyro.CFrame = cam.CFrame
+
+            local moveVector = Vector3.new(0, 0, 0)
+
+            -- Điều khiển PC: WASD bay chuẩn theo hướng Camera
+            if UserInputService:IsKeyDown(Enum.KeyCode.W) then
+                moveVector = moveVector + cam.CFrame.LookVector
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.S) then
+                moveVector = moveVector - cam.CFrame.LookVector
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.A) then
+                moveVector = moveVector - cam.CFrame.RightVector
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.D) then
+                moveVector = moveVector + cam.CFrame.RightVector
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+                moveVector = moveVector + Vector3.new(0, 1, 0)
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) or UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then
+                moveVector = moveVector - Vector3.new(0, 1, 0)
+            end
+
+            -- Hỗ trợ cần gạt điều khiển trên thiết bị Mobile
+            if moveVector.Magnitude == 0 and humanoid.MoveDirection.Magnitude > 0 then
+                local md = humanoid.MoveDirection
+                moveVector = (cam.CFrame.RightVector * md.X + cam.CFrame.LookVector * (-md.Z))
+            end
+
+            -- Áp dụng vận tốc di chuyển
+            if moveVector.Magnitude > 0 then
+                flyBodyVelocity.Velocity = moveVector.Unit * flySpeed
+            else
+                -- Đứng yên lơ lửng tại chỗ khi không nhấn phím
+                flyBodyVelocity.Velocity = Vector3.new(0, 0, 0)
+            end
+        end)
+    else
+        -- Tắt bay
+        flyEnabled = false
+        if flyRenderConn then
+            flyRenderConn:Disconnect()
+            flyRenderConn = nil
+        end
+        if flyCharConn then
+            flyCharConn:Disconnect()
+            flyCharConn = nil
+        end
+        cleanupFlyPhysics()
+    end
+end
+
+function Misc.IsFlyEnabled()
+    return flyEnabled
+end
+
+-- Noclip - Xuyên qua vật cản
+function Misc.SetNoclip(enable)
+    enable = normalizeCall(enable)
+    noclipEnabled = enable
+
+    if enable then
+        if noclipConn then
+            noclipConn:Disconnect()
+        end
+
+        noclipConn = RunService.RenderStepped:Connect(function()
+            if not noclipEnabled then
+                if noclipConn then
+                    noclipConn:Disconnect()
+                    noclipConn = nil
+                end
+                return
+            end
+
+            local char = getCharacter()
+            if not char then return end
+
+            for _, part in ipairs(char:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    part.CanCollide = false
+                end
+            end
+        end)
+    else
+        local char = getCharacter()
+        if char then
+            for _, part in ipairs(char:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    part.CanCollide = true
+                end
+            end
+        end
+        if noclipConn then
+            noclipConn:Disconnect()
+            noclipConn = nil
+        end
+    end
+end
+
+function Misc.IsNoclipEnabled()
+    return noclipEnabled
+end
+
+-- Infinite Jump - Nhảy không giới hạn
+function Misc.SetInfJump(enable)
+    enable = normalizeCall(enable)
+    infJumpEnabled = enable
+
+    if enable then
+        if infJumpConn then
+            infJumpConn:Disconnect()
+            infJumpConn = nil
+        end
+
+        -- Lắng nghe sự kiện JumpRequest chuẩn (nhảy vô hạn trên không, hỗ trợ Spacebar PC, nút bấm Mobile và Gamepad)
+        infJumpConn = UserInputService.JumpRequest:Connect(function()
+            if not infJumpEnabled then return end
+            local humanoid = getHumanoid()
+            if humanoid and humanoid.Health > 0 then
+                humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+            end
+        end)
+    else
+        infJumpEnabled = false
+        if infJumpConn then
+            infJumpConn:Disconnect()
+            infJumpConn = nil
+        end
+    end
+end
+
+function Misc.IsInfJumpEnabled()
+    return infJumpEnabled
+end
+
+-- NoClip Camera - Xuyên vật thể camera (cam)
+function Misc.SetNoClipCam(enable)
+    enable = normalizeCall(enable)
+    noClipCamEnabled = enable
+
+    if enable then
+        local success, err = pcall(function()
+            workspace.Camera:ClearAllFilters()
+            workspace.Camera.FieldOfView = 90 -- FOV mở rộng
+
+            -- Tắt collision cho camera
+            workspace.CurrentCamera.CFrame = workspace.CurrentCamera.CFrame
+        end)
+
+        -- Sử dụng Transparent để camera xuyên qua vật thể
+        if noClipCamConn then
+            noClipCamConn:Disconnect()
+        end
+
+        noClipCamConn = RunService.RenderStepped:Connect(function()
+            if not noClipCamEnabled then
+                if noClipCamConn then
+                    noClipCamConn:Disconnect()
+                    noClipCamConn = nil
+                end
+                return
+            end
+
+            -- Tạo camera mới mỗi frame để tránh collision
+            local cam = workspace.CurrentCamera
+            if cam then
+                local camCF = cam.CFrame
+                -- Di chuyển camera một chút để reset physics
+                cam.CFrame = camCF * CFrame.new(0, 0, 0)
+            end
+        end)
+    else
+        if noClipCamConn then
+            noClipCamConn:Disconnect()
+            noClipCamConn = nil
+        end
+    end
+end
+
+function Misc.IsNoClipCamEnabled()
+    return noClipCamEnabled
+end
+
+-- Camera Distance - Điều chỉnh khoảng cách camera
+function Misc.SetCamDistance(enable, distance)
+    enable, distance = normalizeCall(enable, distance)
+    camDistanceEnabled = enable
+    camDistanceValue = distance or 0.5
+
+    if enable then
+        if camDistanceConn then
+            camDistanceConn:Disconnect()
+        end
+
+        camDistanceConn = RunService.RenderStepped:Connect(function()
+            if not camDistanceEnabled then
+                if camDistanceConn then
+                    camDistanceConn:Disconnect()
+                    camDistanceConn = nil
+                end
+                -- Reset camera về giá trị mặc định
+                workspace.CurrentCamera.FieldOfView = 70
+                workspace.CurrentCamera = workspace.CurrentCamera
+                return
+            end
+
+            local cam = workspace.CurrentCamera
+            if cam then
+                cam.FieldOfView = camDistanceValue
+            end
+        end)
+    else
+        -- Reset về giá trị mặc định
+        workspace.CurrentCamera.FieldOfView = 70
+        if camDistanceConn then
+            camDistanceConn:Disconnect()
+            camDistanceConn = nil
+        end
+    end
+end
+
+function Misc.IsCamDistanceEnabled()
+    return camDistanceEnabled
+end
+
+-- Time Manager - Điều chỉnh và cố định thời gian trong ngày
+function Misc.SetTimeManager(enable, hour)
+    enable, hour = normalizeCall(enable, hour)
+    local Lighting = game:GetService("Lighting")
+
+    if enable then
+        if hour ~= nil then
+            timeManagerHour = hour
+        end
+
+        -- Lưu lại ClockTime ban đầu nếu bật lần đầu
+        if not timeManagerEnabled then
+            originalClockTime = Lighting.ClockTime
+            timeManagerEnabled = true
+        end
+
+        -- Hàm áp dụng thời gian
+        local function applyTime()
+            if not timeManagerEnabled or isApplyingTime then return end
+            isApplyingTime = true
+            pcall(function()
+                Lighting.ClockTime = timeManagerHour
+            end)
+            isApplyingTime = false
+        end
+
+        applyTime()
+
+        -- Lắng nghe sự kiện thay đổi thuộc tính ClockTime từ các script ngày/đêm của game
+        if not lightingChangeConn then
+            lightingChangeConn = Lighting:GetPropertyChangedSignal("ClockTime"):Connect(function()
+                if timeManagerEnabled and not isApplyingTime then
+                    if math.abs(Lighting.ClockTime - timeManagerHour) > 0.001 then
+                        applyTime()
+                    end
+                end
+            end)
+        end
+
+        -- Duy trì trong RenderStepped để đảm bảo mượt mà và không giật lag
+        if not lightingConn then
+            lightingConn = RunService.RenderStepped:Connect(function()
+                if not timeManagerEnabled then
+                    if lightingConn then
+                        lightingConn:Disconnect()
+                        lightingConn = nil
+                    end
+                    return
+                end
+                if math.abs(Lighting.ClockTime - timeManagerHour) > 0.001 then
+                    applyTime()
+                end
+            end)
+        end
+    else
+        timeManagerEnabled = false
+
+        if lightingConn then
+            lightingConn:Disconnect()
+            lightingConn = nil
+        end
+
+        if lightingChangeConn then
+            lightingChangeConn:Disconnect()
+            lightingChangeConn = nil
+        end
+
+        -- Khôi phục lại thời gian gốc của game
+        if originalClockTime ~= nil then
+            pcall(function()
+                Lighting.ClockTime = originalClockTime
+            end)
+            originalClockTime = nil
+        end
+    end
+end
+
+function Misc.IsTimeManagerEnabled()
+    return timeManagerEnabled
+end
+
+-- Helper áp dụng tắt sương mù cho 1 Atmosphere
+local function applyAtmosphereClear(atm)
+    if not atm or not atm:IsA("Atmosphere") then return end
+    if not originalAtmospheres[atm] then
+        originalAtmospheres[atm] = {
+            Density = atm.Density,
+            Offset = atm.Offset,
+            Haze = atm.Haze,
+            Glare = atm.Glare
+        }
+    end
+    pcall(function()
+        atm.Density = 0
+        atm.Offset = 0
+        atm.Haze = 0
+        atm.Glare = 0
+    end)
+end
+
+-- Helper áp dụng tắt mờ xa cho 1 DepthOfFieldEffect
+local function applyDoFClear(dof)
+    if not dof or not dof:IsA("DepthOfFieldEffect") then return end
+    if not originalDoFs[dof] then
+        originalDoFs[dof] = {
+            Enabled = dof.Enabled
+        }
+    end
+    pcall(function()
+        dof.Enabled = false
+    end)
+end
+
+-- No Fog - Tắt sương mù hiện đại (Atmosphere, DepthOfField) và legacy (Lighting Fog)
+function Misc.SetNoFog(enable, distance)
+    enable, distance = normalizeCall(enable, distance)
+    local Lighting = game:GetService("Lighting")
+
+    if enable then
+        noFogEnabled = true
+
+        -- Lưu lại thông số legacy fog ban đầu
+        if not originalLightingFog then
+            originalLightingFog = {
+                FogEnd = Lighting.FogEnd,
+                FogStart = Lighting.FogStart,
+                FogColor = Lighting.FogColor
+            }
+        end
+
+        -- Hàm áp dụng cài đặt xóa sương mù
+        local function applyNoFogSettings()
+            -- 1. Legacy Fog
+            pcall(function()
+                if distance then
+                    Lighting.FogEnd = distance
+                    Lighting.FogStart = distance * 0.8
+                else
+                    Lighting.FogStart = 0
+                    Lighting.FogEnd = 1e9
+                end
+            end)
+
+            -- 2. Quét và tắt sương mù Atmosphere & làm mờ DepthOfField trong Lighting và Workspace
+            local searchContainers = { Lighting, workspace }
+            for _, container in ipairs(searchContainers) do
+                if container then
+                    for _, desc in ipairs(container:GetDescendants()) do
+                        if desc:IsA("Atmosphere") then
+                            applyAtmosphereClear(desc)
+                        elseif desc:IsA("DepthOfFieldEffect") then
+                            applyDoFClear(desc)
+                        end
+                    end
+                end
+            end
+        end
+
+        applyNoFogSettings()
+
+        -- Lắng nghe khi game tạo mới Atmosphere hoặc DepthOfField (ví dụ khi đổi map/khu vực)
+        if not fogDescendantConn then
+            fogDescendantConn = Lighting.DescendantAdded:Connect(function(desc)
+                if not noFogEnabled then return end
+                if desc:IsA("Atmosphere") then
+                    applyAtmosphereClear(desc)
+                elseif desc:IsA("DepthOfFieldEffect") then
+                    applyDoFClear(desc)
+                end
+            end)
+        end
+
+        -- Vòng lặp duy trì liên tục để ngăn chặn game ghi đè lại thuộc tính
+        if not fogConn then
+            fogConn = RunService.RenderStepped:Connect(function()
+                if not noFogEnabled then
+                    if fogConn then
+                        fogConn:Disconnect()
+                        fogConn = nil
+                    end
+                    return
+                end
+
+                -- Kiểm tra và đè lại Legacy Fog nếu bị game thay đổi
+                if distance then
+                    if Lighting.FogEnd ~= distance then
+                        Lighting.FogEnd = distance
+                        Lighting.FogStart = distance * 0.8
+                    end
+                else
+                    if Lighting.FogEnd < 1e8 then
+                        Lighting.FogStart = 0
+                        Lighting.FogEnd = 1e9
+                    end
+                end
+
+                -- Kiểm tra và đè lại Atmosphere
+                for atm, _ in pairs(originalAtmospheres) do
+                    if atm and atm.Parent and atm.Density > 0 then
+                        pcall(function()
+                            atm.Density = 0
+                            atm.Haze = 0
+                        end)
+                    end
+                end
+
+                -- Kiểm tra và tắt DoF nếu bị game bật lại
+                for dof, _ in pairs(originalDoFs) do
+                    if dof and dof.Parent and dof.Enabled then
+                        pcall(function()
+                            dof.Enabled = false
+                        end)
+                    end
+                end
+            end)
+        end
+    else
+        noFogEnabled = false
+
+        -- Ngắt kết nối các sự kiện
+        if fogConn then
+            fogConn:Disconnect()
+            fogConn = nil
+        end
+
+        if fogDescendantConn then
+            fogDescendantConn:Disconnect()
+            fogDescendantConn = nil
+        end
+
+        -- Khôi phục Legacy Fog ban đầu
+        if originalLightingFog then
+            pcall(function()
+                Lighting.FogEnd = originalLightingFog.FogEnd
+                Lighting.FogStart = originalLightingFog.FogStart
+                Lighting.FogColor = originalLightingFog.FogColor
+            end)
+            originalLightingFog = nil
+        end
+
+        -- Khôi phục Atmosphere ban đầu
+        for atm, props in pairs(originalAtmospheres) do
+            if atm and atm.Parent then
+                pcall(function()
+                    atm.Density = props.Density
+                    atm.Offset = props.Offset
+                    atm.Haze = props.Haze
+                    atm.Glare = props.Glare
+                end)
+            end
+        end
+        originalAtmospheres = {}
+
+        -- Khôi phục DepthOfField ban đầu
+        for dof, props in pairs(originalDoFs) do
+            if dof and dof.Parent then
+                pcall(function()
+                    dof.Enabled = props.Enabled
+                end)
+            end
+        end
+        originalDoFs = {}
+    end
+end
+
+function Misc.IsNoFogEnabled()
+    return noFogEnabled
+end
+
+-- Helper tạo hoặc lấy đèn PointLight trên Camera
+local function getOrCreateFullbrightLight()
+    local cam = workspace.CurrentCamera
+    if not cam then return nil end
+    if fullbrightLight and fullbrightLight.Parent == cam then
+        return fullbrightLight
+    end
+    if fullbrightLight then
+        pcall(function() fullbrightLight:Destroy() end)
+    end
+    local light = Instance.new("PointLight")
+    light.Name = "FullbrightCameraLight"
+    light.Brightness = 1.5
+    light.Range = 120
+    light.Shadows = false
+    light.Color = Color3.fromRGB(255, 255, 255)
+    light.Parent = cam
+    fullbrightLight = light
+    return light
+end
+
+-- Fullbright - Làm sáng toàn bộ môi trường và xóa bỏ góc tối
+function Misc.SetFullbright(enable)
+    enable = normalizeCall(enable)
+    local Lighting = game:GetService("Lighting")
+
+    if enable then
+        fullbrightEnabled = true
+
+        -- Lưu lại thông số ánh sáng gốc của game
+        if not originalLightingSettings then
+            originalLightingSettings = {
+                Brightness = Lighting.Brightness,
+                ClockTime = Lighting.ClockTime,
+                GlobalShadows = Lighting.GlobalShadows,
+                Ambient = Lighting.Ambient,
+                OutdoorAmbient = Lighting.OutdoorAmbient,
+                ExposureCompensation = Lighting.ExposureCompensation
+            }
+        end
+
+        -- Hàm áp dụng ánh sáng cực đại
+        local function applyFullbright()
+            pcall(function()
+                Lighting.Brightness = 2
+                Lighting.GlobalShadows = false
+                Lighting.Ambient = Color3.fromRGB(255, 255, 255)
+                Lighting.OutdoorAmbient = Color3.fromRGB(255, 255, 255)
+                -- Chỉ chuyển sang ban ngày nếu TimeManager không can thiệp
+                if not timeManagerEnabled then
+                    Lighting.ClockTime = 14
+                end
+            end)
+            getOrCreateFullbrightLight()
+        end
+
+        applyFullbright()
+
+        -- Duy trì trong RenderStepped để chống script của game ghi đè
+        if not fullbrightConn then
+            fullbrightConn = RunService.RenderStepped:Connect(function()
+                if not fullbrightEnabled then
+                    if fullbrightConn then
+                        fullbrightConn:Disconnect()
+                        fullbrightConn = nil
+                    end
+                    return
+                end
+
+                if Lighting.GlobalShadows ~= false or Lighting.Brightness < 1.5 or Lighting.Ambient ~= Color3.fromRGB(255, 255, 255) then
+                    applyFullbright()
+                end
+
+                -- Đảm bảo đèn gắn trên Camera luôn tồn tại (ví dụ khi Camera reset)
+                if not fullbrightLight or fullbrightLight.Parent ~= workspace.CurrentCamera then
+                    getOrCreateFullbrightLight()
+                end
+            end)
+        end
+    else
+        fullbrightEnabled = false
+
+        if fullbrightConn then
+            fullbrightConn:Disconnect()
+            fullbrightConn = nil
+        end
+
+        -- Xóa đèn client trên camera
+        if fullbrightLight then
+            pcall(function() fullbrightLight:Destroy() end)
+            fullbrightLight = nil
+        end
+
+        -- Khôi phục lại ánh sáng ban đầu của game
+        if originalLightingSettings then
+            pcall(function()
+                Lighting.Brightness = originalLightingSettings.Brightness
+                Lighting.GlobalShadows = originalLightingSettings.GlobalShadows
+                Lighting.Ambient = originalLightingSettings.Ambient
+                Lighting.OutdoorAmbient = originalLightingSettings.OutdoorAmbient
+                Lighting.ExposureCompensation = originalLightingSettings.ExposureCompensation
+                if not timeManagerEnabled then
+                    Lighting.ClockTime = originalLightingSettings.ClockTime
+                end
+            end)
+            originalLightingSettings = nil
+        end
+    end
+end
+
+function Misc.IsFullbrightEnabled()
+    return fullbrightEnabled
+end
+
+-- Instant Proximity Prompts - Set HoldDuration = 0 để ấn 1 lần kích hoạt được
+function Misc.SetInstantPrompts(enable)
+    enable = normalizeCall(enable)
+    instantPromptsEnabled = enable
+
+    if enable then
+        -- Set HoldDuration = 0 cho tất cả prompts hiện có
+        for _, obj in ipairs(workspace:GetDescendants()) do
+            if obj:IsA("ProximityPrompt") then
+                obj.HoldDuration = 0 -- Ấn 1 lần là kích hoạt
+            end
+        end
+    else
+        -- Reset HoldDuration về mặc định (0.3 giây)
+        for _, obj in ipairs(workspace:GetDescendants()) do
+            if obj:IsA("ProximityPrompt") then
+                obj.HoldDuration = 0.3 -- Giá trị mặc định Roblox
+            end
+        end
+    end
+end
+
+function Misc.IsInstantPromptsEnabled()
+    return instantPromptsEnabled
+end
+
+-- Anti AFK - Tự động tránh kick AFK
+function Misc.SetAntiAFK(enable)
+    enable = normalizeCall(enable)
+    antiAFKEnabled = enable
+
+    if enable then
+        antiAFKTick = tick()
+
+        -- Ngắt kết nối cũ nếu có
+        if antiAFKConn then
+            antiAFKConn:Disconnect()
+        end
+
+        -- Tạo kết nối mới
+        antiAFKConn = game:GetService("RunService").Heartbeat:Connect(function()
+            if not antiAFKEnabled then
+                if antiAFKConn then
+                    antiAFKConn:Disconnect()
+                    antiAFKConn = nil
+                end
+                return
+            end
+
+            -- Gửi input giả lập mỗi 60 giây để tránh AFK
+            local now = tick()
+            if now - antiAFKTick >= 60 then
+                antiAFKTick = now
+
+                -- Simulate movement để tránh kick
+                local player = LocalPlayer
+                if player and player.Character then
+                    local rootPart = player.Character:FindFirstChild("HumanoidRootPart")
+                    if rootPart then
+                        -- Di chuyển nhẹ để tránh AFK
+                        rootPart.Velocity = Vector3.new(0, 50, 0)
+                        wait(0.1)
+                        rootPart.Velocity = Vector3.new(0, 0, 0)
+                    end
+                end
+            end
+        end)
+
+        -- Hook vào CoreGui để ngăn AFK message
+        pcall(function()
+            local coreGui = game:GetService("CoreGui")
+            local ui = coreGui:FindFirstChild("HealthWarning") or
+                coreGui:FindFirstChild("MessagePosted").Parent
+            if ui then
+                ui.Enabled = false
+            end
+        end)
+    else
+        antiAFKEnabled = false
+        if antiAFKConn then
+            antiAFKConn:Disconnect()
+            antiAFKConn = nil
+        end
+    end
+end
+
+function Misc.IsAntiAFKEnabled()
+    return antiAFKEnabled
+end
+
+-- FPS Unlocker - Tăng FPS lên 60+
+function Misc.SetFPSUnlocker(enable)
+    enable = normalizeCall(enable)
+    fpsUnlockerEnabled = enable
+
+    if enable then
+        -- Tắt FPS throttling
+        pcall(function()
+            local stats = game:GetService("Stats")
+            stats:FPSUnlock()
+        end)
+
+        -- Set framerate target cao
+        if fpsUnlockerConn then
+            fpsUnlockerConn:Disconnect()
+        end
+
+        fpsUnlockerConn = RunService.RenderStepped:Connect(function()
+            if not fpsUnlockerEnabled then
+                if fpsUnlockerConn then
+                    fpsUnlockerConn:Disconnect()
+                    fpsUnlockerConn = nil
+                end
+                return
+            end
+
+            -- Yêu cầu frame cao hơn 60
+            pcall(function()
+                workspace:SetRealPhysicsFPS(240)
+                RunService:Set3dRenderingEnabled(true)
+            end)
+        end)
+    else
+        fpsUnlockerEnabled = false
+        if fpsUnlockerConn then
+            fpsUnlockerConn:Disconnect()
+            fpsUnlockerConn = nil
+        end
+
+        -- Reset về mặc định
+        pcall(function()
+            workspace:SetRealPhysicsFPS(60)
+        end)
+    end
+end
+
+function Misc.IsFPSUnlockerEnabled()
+    return fpsUnlockerEnabled
+end
+
+-- Name Tags - Tùy chỉnh tên người chơi
+function Misc.SetNameTags(enable, prefix, color)
+    enable, prefix, color = normalizeCall(enable, prefix, color)
+    nameTagsEnabled = enable
+
+    if enable then
+        nameTagsPrefix = prefix or ""
+        nameTagsColor = color or Color3.fromRGB(255, 255, 255)
+
+        -- Cập nhật tên tất cả người chơi
+        for _, player in ipairs(Players:GetPlayers()) do
+            if player ~= LocalPlayer then
+                local function updateName()
+                    local character = player.Character or workspace:FindFirstChild(player.Name)
+                    if character then
+                        local head = character:FindFirstChild("Head")
+                        if head then
+                            local billboard = head:FindFirstChild("NameTag" .. player.UserId)
+                            if billboard then
+                                billboard:Destroy()
+                            end
+
+                            billboard = Instance.new("BillboardGui")
+                            billboard.Name = "NameTag" .. player.UserId
+                            billboard.Size = UDim2.new(0, 100, 0, 25)
+                            billboard.StudsOffset = Vector3.new(0, 3, 0)
+                            billboard.Adornee = head
+                            billboard.AlwaysOnTop = true
+                            billboard.Parent = head
+
+                            local textLabel = Instance.new("TextLabel")
+                            textLabel.Size = UDim2.new(1, 0, 1, 0)
+                            textLabel.BackgroundTransparency = 1
+                            textLabel.Text = nameTagsPrefix .. player.Name
+                            textLabel.TextColor3 = nameTagsColor
+                            textLabel.TextStrokeTransparency = 0
+                            textLabel.Font = Enum.Font.SourceSans
+                            textLabel.TextSize = 16
+                            textLabel.Parent = billboard
+                        end
+                    end
+                end
+
+                updateName()
+
+                -- Cập nhật khi nhân vật thay đổi
+                local charConn
+                charConn = player.CharacterAdded:Connect(function()
+                    wait(1) -- Chờ nhân vật load
+                    updateName()
+                end)
+            end
+        end
+    else
+        -- Xóa tất cả name tags
+        for _, player in ipairs(Players:GetPlayers()) do
+            if player.Character then
+                local head = player.Character:FindFirstChild("Head")
+                if head then
+                    for _, child in ipairs(head:GetChildren()) do
+                        if child.Name:match("^NameTag") then
+                            child:Destroy()
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+
+function Misc.IsNameTagsEnabled()
+    return nameTagsEnabled
+end
+
+-- ==================== FREECAM ====================
+
+-- Freecam - Camera tự do di chuyển
+-- WASD: di chuyển, Space/Ctrl: lên/xuống, chuột: xoay camera
+-- Chuột phải: nhập vào player/model gần tâm camera (possess), nhấn lại để thoát
+function Misc.SetFreecam(enable, speed)
+    enable, speed = normalizeCall(enable, speed)
+    if speed then
+        freecamSpeed = speed
+    end
+
+    if enable then
+        if freecamEnabled then
+            -- Nếu đã bật thì chỉ cập nhật tốc độ
+            return
+        end
+        freecamEnabled = true
+        local cam = workspace.CurrentCamera
+
+        -- Lưu trạng thái camera gốc để restore khi tắt
+        freecamOriginalCameraType = cam.CameraType
+        freecamOriginalCameraSubject = cam.CameraSubject
+
+        -- Khởi tạo vị trí và góc xoay từ camera hiện tại
+        freecamPosition = cam.CFrame.Position
+        local lookVector = cam.CFrame.LookVector
+        freecamYaw = math.atan2(-lookVector.X, -lookVector.Z)
+        freecamPitch = math.asin(math.clamp(lookVector.Y, -1, 1))
+        freecamPossessed = nil
+
+        -- Chặn điều khiển nhân vật để khi ấn WASD/Space chỉ camera di chuyển, nhân vật đứng yên
+        pcall(function()
+            ContextActionService:BindActionAtPriority(
+                "FreecamBlockCharacterMovement",
+                function()
+                    return Enum.ContextActionResult.Sink
+                end,
+                false,
+                Enum.ContextActionPriority.High.Value + 1000,
+                Enum.KeyCode.W, Enum.KeyCode.A, Enum.KeyCode.S, Enum.KeyCode.D,
+                Enum.KeyCode.Space, Enum.KeyCode.LeftControl, Enum.KeyCode.LeftShift
+            )
+        end)
+
+        -- Cố định (Anchor) nhân vật tại chỗ để không bị trôi hoặc chịu lực vật lý
+        local myChar = getCharacter()
+        local myRoot = myChar and (myChar:FindFirstChild("HumanoidRootPart") or myChar:FindFirstChild("Torso"))
+        if myRoot then
+            freecamOriginalAnchored = myRoot.Anchored
+            myRoot.Anchored = true
+        end
+
+        -- Chuyển camera sang chế độ scriptable (tự điều khiển hoàn toàn)
+        cam.CameraType = Enum.CameraType.Scriptable
+
+        -- Ngắt kết nối cũ nếu có
+        if freecamRightClickConn then freecamRightClickConn:Disconnect() end
+
+        -- Chuột phải: raycast tìm player/model, nếu trúng thì possess
+        freecamRightClickConn = UserInputService.InputBegan:Connect(function(input, gameProcessed)
+            if gameProcessed then return end
+            if not freecamEnabled then return end
+
+            if input.UserInputType == Enum.UserInputType.MouseButton2 then
+                -- Nếu đang possess, thoát possess → quay lại freecam thường
+                if freecamPossessed then
+                    freecamPossessed = nil
+                    return
+                end
+
+                -- Raycast từ tâm camera để tìm entity
+                local cam = workspace.CurrentCamera
+                local screenCenter = Vector2.new(cam.ViewportSize.X / 2, cam.ViewportSize.Y / 2)
+                local ray = cam:ViewportPointToRay(screenCenter.X, screenCenter.Y)
+
+                local rayParams = RaycastParams.new()
+                rayParams.FilterType = Enum.RaycastFilterType.Exclude
+                local myChar = getCharacter()
+                rayParams.FilterDescendantsInstances = myChar and { myChar } or {}
+
+                local result = workspace:Raycast(ray.Origin, ray.Direction * 1000, rayParams)
+                if result and result.Instance then
+                    -- Tìm Model cha chứa part bị trúng
+                    local model = result.Instance:FindFirstAncestorOfClass("Model")
+                    if model then
+                        local humanoid = model:FindFirstChildOfClass("Humanoid")
+                        if humanoid and humanoid.Health > 0 then
+                            -- Nhập vào entity này (possess)
+                            freecamPossessed = model
+                        end
+                    end
+                end
+            end
+        end)
+
+        -- Ngắt kết nối render cũ nếu có
+        if freecamConn then freecamConn:Disconnect() end
+
+        -- Render loop: cập nhật camera mỗi frame
+        freecamConn = RunService.RenderStepped:Connect(function(dt)
+            if not freecamEnabled then return end
+            local cam = workspace.CurrentCamera
+
+            -- Nếu đang possess entity, camera follow phía sau entity (góc nhìn thứ 3)
+            if freecamPossessed and freecamPossessed.Parent then
+                local rootPart = freecamPossessed:FindFirstChild("HumanoidRootPart")
+                    or freecamPossessed:FindFirstChild("Torso")
+                    or freecamPossessed:FindFirstChild("UpperTorso")
+                if rootPart then
+                    -- Vẫn cho phép xoay camera quanh entity bằng chuột
+                    local mouseDelta = UserInputService:GetMouseDelta()
+                    freecamYaw = freecamYaw - mouseDelta.X * 0.003
+                    freecamPitch = math.clamp(freecamPitch - mouseDelta.Y * 0.003, -1.2, 1.2)
+
+                    -- Tính offset phía sau entity dựa trên góc xoay (giống third-person)
+                    local rotCF = CFrame.Angles(0, freecamYaw, 0) * CFrame.Angles(freecamPitch, 0, 0)
+                    local offset = rotCF:VectorToWorldSpace(Vector3.new(0, 3, 12))
+
+                    -- Camera nhìn về phía entity
+                    cam.CFrame = CFrame.new(rootPart.Position + offset, rootPart.Position)
+                    freecamPosition = cam.CFrame.Position
+                    return
+                else
+                    -- Entity mất root part, thoát possess
+                    freecamPossessed = nil
+                end
+            end
+
+            -- Xoay camera bằng chuột (khi không possess)
+            local mouseDelta = UserInputService:GetMouseDelta()
+            freecamYaw = freecamYaw - mouseDelta.X * 0.003
+            freecamPitch = math.clamp(freecamPitch - mouseDelta.Y * 0.003, -math.pi / 2 + 0.01, math.pi / 2 - 0.01)
+
+            -- Hướng nhìn từ góc yaw/pitch
+            local lookRotation = CFrame.Angles(0, freecamYaw, 0) * CFrame.Angles(freecamPitch, 0, 0)
+
+            -- Di chuyển bằng WASD + Space/Ctrl
+            local moveDir = Vector3.new(0, 0, 0)
+            if UserInputService:IsKeyDown(Enum.KeyCode.W) then
+                moveDir = moveDir + lookRotation.LookVector
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.S) then
+                moveDir = moveDir - lookRotation.LookVector
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.A) then
+                moveDir = moveDir - lookRotation.RightVector
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.D) then
+                moveDir = moveDir + lookRotation.RightVector
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+                moveDir = moveDir + Vector3.new(0, 1, 0)
+            end
+            if UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) or UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then
+                moveDir = moveDir - Vector3.new(0, 1, 0)
+            end
+
+            -- Chuẩn hóa hướng và áp dụng tốc độ
+            if moveDir.Magnitude > 0 then
+                moveDir = moveDir.Unit
+            end
+            freecamPosition = freecamPosition + (moveDir * freecamSpeed * dt)
+
+            -- Cập nhật camera: vị trí + hướng nhìn
+            cam.CFrame = CFrame.new(freecamPosition) * lookRotation
+        end)
+    else
+        -- Tắt freecam: ngắt kết nối, khôi phục camera và mở khóa điều khiển nhân vật
+        if freecamConn then
+            freecamConn:Disconnect()
+            freecamConn = nil
+        end
+        if freecamRightClickConn then
+            freecamRightClickConn:Disconnect()
+            freecamRightClickConn = nil
+        end
+
+        -- Mở lại điều khiển nhân vật
+        pcall(function()
+            ContextActionService:UnbindAction("FreecamBlockCharacterMovement")
+        end)
+
+        -- Bỏ Anchor nhân vật
+        local myChar = getCharacter()
+        local myRoot = myChar and (myChar:FindFirstChild("HumanoidRootPart") or myChar:FindFirstChild("Torso"))
+        if myRoot then
+            myRoot.Anchored = freecamOriginalAnchored or false
+        end
+
+        freecamPossessed = nil
+        local cam = workspace.CurrentCamera
+        cam.CameraType = freecamOriginalCameraType or Enum.CameraType.Custom
+        cam.CameraSubject = freecamOriginalCameraSubject
+    end
+end
+
+function Misc.IsFreecamEnabled()
+    return freecamEnabled
+end
+
+-- Lấy model đang được possess trong freecam (nil nếu không possess)
+function Misc.GetFreecamPossessed()
+    return freecamPossessed
+end
+
+-- ==================== SPECTATOR ====================
+
+-- Spectator - Theo dõi camera của player khác
+-- player: Player object muốn spectate
+function Misc.SetSpectator(enable, player)
+    enable, player = normalizeCall(enable, player)
+    spectatorEnabled = enable
+
+    if enable then
+        if not player then
+            warn("Cần chỉ định player để spectate")
+            return
+        end
+
+        -- Không spectate chính mình
+        if player == LocalPlayer then
+            warn("Không thể spectate chính mình")
+            return
+        end
+
+        spectatorTarget = player
+        local cam = workspace.CurrentCamera
+
+        -- Lưu camera gốc
+        spectatorOriginalCameraType = cam.CameraType
+        spectatorOriginalCameraSubject = cam.CameraSubject
+
+        -- Chuyển camera sang theo dõi player mục tiêu
+        cam.CameraType = Enum.CameraType.Custom
+        local char = player.Character
+        if char then
+            local humanoid = char:FindFirstChildOfClass("Humanoid")
+            if humanoid then
+                cam.CameraSubject = humanoid
+            end
+        end
+
+        -- Theo dõi khi player respawn (character thay đổi)
+        if spectatorConn then spectatorConn:Disconnect() end
+        spectatorConn = player.CharacterAdded:Connect(function(newChar)
+            if not spectatorEnabled then return end
+            task.wait(0.5) -- Chờ character load xong
+            local humanoid = newChar:FindFirstChildOfClass("Humanoid")
+            if humanoid then
+                workspace.CurrentCamera.CameraSubject = humanoid
+            end
+        end)
+    else
+        -- Tắt spectator: khôi phục camera về chính mình
+        if spectatorConn then
+            spectatorConn:Disconnect()
+            spectatorConn = nil
+        end
+
+        spectatorTarget = nil
+        local cam = workspace.CurrentCamera
+        cam.CameraType = spectatorOriginalCameraType or Enum.CameraType.Custom
+
+        -- Khôi phục camera subject về nhân vật mình
+        local myChar = getCharacter()
+        if myChar then
+            local myHumanoid = myChar:FindFirstChildOfClass("Humanoid")
+            cam.CameraSubject = myHumanoid or spectatorOriginalCameraSubject
+        else
+            cam.CameraSubject = spectatorOriginalCameraSubject
+        end
+    end
+end
+
+function Misc.IsSpectatorEnabled()
+    return spectatorEnabled
+end
+
+function Misc.GetSpectatorTarget()
+    return spectatorTarget
+end
+
+-- Chuyển spectate sang player tiếp theo trong danh sách (bỏ qua chính mình)
+function Misc.SpectateNext()
+    if not spectatorEnabled then return end
+
+    local players = Players:GetPlayers()
+    if #players <= 1 then return end
+
+    -- Tìm index hiện tại
+    local currentIndex = 0
+    for i, p in ipairs(players) do
+        if p == spectatorTarget then
+            currentIndex = i
+            break
+        end
+    end
+
+    -- Chuyển sang player tiếp theo (bỏ qua chính mình)
+    local nextIndex = currentIndex
+    for _ = 1, #players do
+        nextIndex = (nextIndex % #players) + 1
+        if players[nextIndex] ~= LocalPlayer then
+            break
+        end
+    end
+
+    Misc.SetSpectator(true, players[nextIndex])
+end
+
+-- Chuyển spectate sang player trước đó (bỏ qua chính mình)
+function Misc.SpectatePrev()
+    if not spectatorEnabled then return end
+
+    local players = Players:GetPlayers()
+    if #players <= 1 then return end
+
+    -- Tìm index hiện tại
+    local currentIndex = 0
+    for i, p in ipairs(players) do
+        if p == spectatorTarget then
+            currentIndex = i
+            break
+        end
+    end
+
+    -- Chuyển sang player trước đó (bỏ qua chính mình)
+    local prevIndex = currentIndex
+    for _ = 1, #players do
+        prevIndex = ((prevIndex - 2) % #players) + 1
+        if players[prevIndex] ~= LocalPlayer then
+            break
+        end
+    end
+
+    Misc.SetSpectator(true, players[prevIndex])
+end
+
+-- Cleanup - Dọn dẹp tất cả khi không cần nữa
+function Misc.Cleanup()
+    Misc.SetSpeed(false)
+    Misc.SetSpeedMultiplier(false)
+    Misc.SetJumpPower(false)
+    Misc.SetJumpPowerMultiplier(false)
+    Misc.SetFly(false)
+    Misc.SetNoclip(false)
+    Misc.SetNoClipCam(false)
+    Misc.SetCamDistance(false)
+    Misc.SetTimeManager(false)
+    Misc.SetNoFog(false)
+    Misc.SetFullbright(false)
+    Misc.SetInstantPrompts(false)
+    Misc.SetAntiAFK(false)
+    Misc.SetFPSUnlocker(false)
+    Misc.SetNameTags(false)
+    Misc.SetInfJump(false)
+    Misc.SetFreecam(false)
+    Misc.SetSpectator(false)
+end
+
+return Misc

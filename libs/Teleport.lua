@@ -1,9 +1,314 @@
--- ██╗    ██╗██╗███╗   ██╗██╗███████╗██╗   ██╗
--- ██║    ██║██║████╗  ██║██║██╔════╝╚██╗ ██╔╝
--- ██║ █╗ ██║██║██╔██╗ ██║██║█████╗   ╚████╔╝ 
--- ██║███╗██║██║██║╚██╗██║██║██╔══╝    ╚██╔╝  
--- ╚███╔███╔╝██║██║ ╚████║██║██║        ██║   
---  ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚═╝╚═╝        ╚═╝   
--- [Protected by WiniFy Luau Obfuscator]
+--[[
+    Teleport Library - Các chức năng dịch chuyển nhanh trong Roblox
+    Hỗ trợ: ToPosition, ToPlayer, ToPlace, GetPlayers, NearestPlayer, GetPlayerByName,
+            ToPlayerByName, GetPlayersInRange, ClickTeleport, Keybind
 
-local _0x3bff=(function(bytes,key)local buffer={}for i=1,#bytes do buffer[i]=string.char(bit32.bxor(bytes[i],key))end return table.concat(buffer)end);return(function(...)local Il1_0x5e0f={}local Il1_0x5e06=game:GetService(_0x3bff({0x64,0x58,0x55,0x4d,0x51,0x46,0x47},0x34))local Il1_0x5e09=game:GetService(_0x3bff({0xd4,0xe5,0xec,0xe5,0xf0,0xef,0xf2,0xf4,0xd3,0xe5,0xf2,0xf6,0xe9,0xe3,0xe5},0x80))local Il1_0x5e18=game:GetService(_0x3bff({0xf8,0xde,0xc8,0xdf,0xe4,0xc3,0xdd,0xd8,0xd9,0xfe,0xc8,0xdf,0xdb,0xc4,0xce,0xc8},0xad))local Il1_0x5e13=Il1_0x5e06[_0x3bff({0x2c,0x0f,0x03,0x01,0x0c,0x30,0x0c,0x01,0x19,0x05,0x12},0x60)]local Il1_0x5e1e=false local Il1_0x5e11=nil local Il1_0x5e0c=nil local Il1_0x5e1f=nil local function Il1_0x5e0d()return Il1_0x5e13[_0x3bff({0xef,0xc4,0xcd,0xde,0xcd,0xcf,0xd8,0xc9,0xde},0xac)]or workspace:FindFirstChild(Il1_0x5e13[_0x3bff({0xe8,0xc7,0xcb,0xc3},0xa6)])end local function Il1_0x5e1a(Il1_0x5e12)if Il1_0x5e12 then return Il1_0x5e12:FindFirstChild(_0x3bff({0xaf,0x92,0x8a,0x86,0x89,0x88,0x8e,0x83,0xb5,0x88,0x88,0x93,0xb7,0x86,0x95,0x93},0xe7))or Il1_0x5e12:FindFirstChild(_0x3bff({0xaa,0x91,0x8c,0x8d,0x91},0xfe))or Il1_0x5e12:FindFirstChild(_0x3bff({0x76,0x53,0x53,0x46,0x51,0x77,0x4c,0x51,0x50,0x4c},0x23))end return nil end function Il1_0x5e0f.ToPosition(position,offsetY)if not position or typeof(position)~=_0x3bff({0xeb,0xd8,0xde,0xc9,0xd2,0xcf,0x8e},0xbd)then warn(_0x3bff({0x66,0xd1,0x8b,0xbb,0x10,0x44,0x42,0xf3,0x9d,0x10,0x5b,0x58,0xf3,0x84,0x5e,0x57,0x10,0x58,0xd1,0x8b,0x93,0x40,0x10,0x5c,0xd1,0x8b,0xb7},0x30))return false end local Il1_0x5e12=Il1_0x5e0d()if not Il1_0x5e12 then return false end local Il1_0x5e17=Il1_0x5e1a(Il1_0x5e12)if not Il1_0x5e17 then return false end Il1_0x5e17[_0x3bff({0x8d,0x88,0xbc,0xaf,0xa3,0xab},0xce)]=CFrame[_0x3bff({0xe0,0xeb,0xf9},0x8e)](position[_0x3bff({0xda},0x82)],position[_0x3bff({0x35},0x6c)]+(offsetY or(0x25d5-0x25d0)),position[_0x3bff({0xfa},0xa0)])return true end function Il1_0x5e0f.ToPlayer(Il1_0x5e0b)if not Il1_0x5e0b then return false end local Il1_0x5e05=nil if typeof(Il1_0x5e0b)==_0x3bff({0x71,0x76,0x70,0x6b,0x6c,0x65},0x02)then Il1_0x5e05=Il1_0x5e06:FindFirstChild(Il1_0x5e0b)or Il1_0x5e06:WaitForChild(Il1_0x5e0b,(0x3b59-0x3b58))elseif typeof(Il1_0x5e0b)==_0x3bff({0xbc,0xa7,0xbf,0xb0,0xb7,0xa0},0xd2)then for Il1_0x5e1d,Il1_0x5e07 in ipairs(Il1_0x5e06:GetPlayers())do if Il1_0x5e07[_0x3bff({0x72,0x54,0x42,0x55,0x6e,0x43},0x27)]==Il1_0x5e0b then Il1_0x5e05=Il1_0x5e07 break end end elseif Il1_0x5e0b:IsA(_0x3bff({0xdb,0xe7,0xea,0xf2,0xee,0xf9},0x8b))then Il1_0x5e05=Il1_0x5e0b end if not Il1_0x5e05 then warn(_0x3bff({0x56,0x75,0xde,0xa9,0x73,0x7a,0x3d,0x69,0xde,0xb1,0x70,0x3d,0x69,0x75,0xfc,0xa7,0xb8,0x64,0x3d,0x6d,0x71,0x7c,0x64,0x78,0x6f,0x27},0x1d),Il1_0x5e0b)return false end local Il1_0x5e1c=Il1_0x5e05[_0x3bff({0x1f,0x34,0x3d,0x2e,0x3d,0x3f,0x28,0x39,0x2e},0x5c)]or workspace:FindFirstChild(Il1_0x5e05[_0x3bff({0x36,0x19,0x15,0x1d},0x78)])if not Il1_0x5e1c then warn(_0x3bff({0x7c,0x40,0x4d,0x55,0x49,0x5e,0x0c,0x4f,0x44,0xea,0x9c,0x4d,0x0c,0x4f,0xef,0x9f,0x0c,0x4f,0x44,0x4d,0x5e,0x4d,0x4f,0x58,0x49,0x5e},0x2c))return false end local Il1_0x5e14=Il1_0x5e1a(Il1_0x5e1c)if not Il1_0x5e14 then return false end local Il1_0x5e08=Il1_0x5e14[_0x3bff({0x8f,0xb0,0xac,0xb6,0xab,0xb6,0xb0,0xb1},0xdf)]local Il1_0x5e12=Il1_0x5e0d()if not Il1_0x5e12 then return false end local Il1_0x5e17=Il1_0x5e1a(Il1_0x5e12)if not Il1_0x5e17 then return false end Il1_0x5e17[_0x3bff({0x78,0x7d,0x49,0x5a,0x56,0x5e},0x3b)]=CFrame[_0x3bff({0x8e,0x85,0x97},0xe0)](Il1_0x5e08)*CFrame[_0x3bff({0x10,0x1b,0x09},0x7e)](((0x2*0x0)+0x0),(0x3433-0x3430),(0x167f-0x167f))return true end function Il1_0x5e0f.ToPlace(placeId)if not placeId then warn(_0x3bff({0xbc,0x80,0x8d,0x8f,0x89,0xa5,0x88,0xcc,0x87,0x84,0x2f,0x58,0x82,0x8b,0xcc,0x84,0x0d,0x57,0x4f,0x9c,0xcc,0x80,0x0d,0x57,0x6b},0xec))return false end local Il1_0x5e15=pcall(function()Il1_0x5e09:Il1_0x5e0f(placeId,Il1_0x5e13)end)return Il1_0x5e15 end function Il1_0x5e0f.GetPlayers()local Il1_0x5e0a={}for Il1_0x5e1d,Il1_0x5e0b in ipairs(Il1_0x5e06:GetPlayers())do if Il1_0x5e0b~=Il1_0x5e13 then table[_0x3bff({0xdb,0xdc,0xc1,0xd7,0xc0,0xc6},0xb2)](Il1_0x5e0a,Il1_0x5e0b)end end return Il1_0x5e0a end function Il1_0x5e0f.GetNearestPlayer()local Il1_0x5e12=Il1_0x5e0d()if not Il1_0x5e12 then return nil end local Il1_0x5e17=Il1_0x5e1a(Il1_0x5e12)if not Il1_0x5e17 then return nil end local Il1_0x5e0e=nil local Il1_0x5e10=math[_0x3bff({0xe7,0xfa,0xe8,0xea},0x8f)]for Il1_0x5e1d,Il1_0x5e0b in ipairs(Il1_0x5e06:GetPlayers())do if Il1_0x5e0b~=Il1_0x5e13 then local Il1_0x5e1c=Il1_0x5e0b[_0x3bff({0xb8,0x93,0x9a,0x89,0x9a,0x98,0x8f,0x9e,0x89},0xfb)]or workspace:FindFirstChild(Il1_0x5e0b[_0x3bff({0xa6,0x89,0x85,0x8d},0xe8)])if Il1_0x5e1c then local Il1_0x5e14=Il1_0x5e1a(Il1_0x5e1c)if Il1_0x5e14 then local Il1_0x5e19=(Il1_0x5e14[_0x3bff({0xbf,0x80,0x9c,0x86,0x9b,0x86,0x80,0x81},0xef)]-Il1_0x5e17[_0x3bff({0xd2,0xed,0xf1,0xeb,0xf6,0xeb,0xed,0xec},0x82)])[_0x3bff({0x95,0x99,0x9f,0x96,0x91,0x8c,0x8d,0x9c,0x9d},0xf8)]if Il1_0x5e19<Il1_0x5e10 then Il1_0x5e10=Il1_0x5e19 Il1_0x5e0e=Il1_0x5e0b end end end end end return Il1_0x5e0e,Il1_0x5e10 end function Il1_0x5e0f.ToNearest()local Il1_0x5e0b,Il1_0x5e19=Il1_0x5e0f[_0x3bff({0x96,0xb4,0xa5,0x9f,0xb4,0xb0,0xa3,0xb4,0xa2,0xa5,0x81,0xbd,0xb0,0xa8,0xb4,0xa3},0xd1)]()if Il1_0x5e0b then return Il1_0x5e0f[_0x3bff({0x17,0x2c,0x13,0x2f,0x22,0x3a,0x26,0x31},0x43)](Il1_0x5e0b)end return false end function Il1_0x5e0f.GetPlayerByName(name)if not name then return nil end name=string[_0x3bff({0xf5,0xf6,0xee,0xfc,0xeb},0x99)](name)for Il1_0x5e1d,Il1_0x5e0b in ipairs(Il1_0x5e06:GetPlayers())do if string[_0x3bff({0x9f,0x9c,0x84,0x96,0x81},0xf3)](Il1_0x5e0b[_0x3bff({0x20,0x0f,0x03,0x0b},0x6e)]):find(name)or(Il1_0x5e0b[_0x3bff({0x54,0x79,0x63,0x60,0x7c,0x71,0x69,0x5e,0x71,0x7d,0x75},0x10)]and string[_0x3bff({0x94,0x97,0x8f,0x9d,0x8a},0xf8)](Il1_0x5e0b[_0x3bff({0xfe,0xd3,0xc9,0xca,0xd6,0xdb,0xc3,0xf4,0xdb,0xd7,0xdf},0xba)]):find(name))then return Il1_0x5e0b end end return nil end function Il1_0x5e0f.ToPlayerByName(name)local Il1_0x5e0b=Il1_0x5e0f[_0x3bff({0x71,0x53,0x42,0x66,0x5a,0x57,0x4f,0x53,0x44,0x74,0x4f,0x78,0x57,0x5b,0x53},0x36)](name)if Il1_0x5e0b then return Il1_0x5e0f[_0x3bff({0x41,0x7a,0x45,0x79,0x74,0x6c,0x70,0x67},0x15)](Il1_0x5e0b)end return false end function Il1_0x5e0f.GetPlayersInRange(range)range=range or((0x9*0x5)+0x5)local Il1_0x5e12=Il1_0x5e0d()if not Il1_0x5e12 then return{}end local Il1_0x5e17=Il1_0x5e1a(Il1_0x5e12)if not Il1_0x5e17 then return{}end local Il1_0x5e1b={}for Il1_0x5e1d,Il1_0x5e0b in ipairs(Il1_0x5e06:GetPlayers())do if Il1_0x5e0b~=Il1_0x5e13 then local Il1_0x5e1c=Il1_0x5e0b[_0x3bff({0x2f,0x04,0x0d,0x1e,0x0d,0x0f,0x18,0x09,0x1e},0x6c)]or workspace:FindFirstChild(Il1_0x5e0b[_0x3bff({0x53,0x7c,0x70,0x78},0x1d)])if Il1_0x5e1c then local Il1_0x5e14=Il1_0x5e1a(Il1_0x5e1c)if Il1_0x5e14 then local Il1_0x5e19=(Il1_0x5e14[_0x3bff({0x77,0x48,0x54,0x4e,0x53,0x4e,0x48,0x49},0x27)]-Il1_0x5e17[_0x3bff({0x30,0x0f,0x13,0x09,0x14,0x09,0x0f,0x0e},0x60)])[_0x3bff({0x76,0x7a,0x7c,0x75,0x72,0x6f,0x6e,0x7f,0x7e},0x1b)]if Il1_0x5e19<=range then table[_0x3bff({0xe2,0xe5,0xf8,0xee,0xf9,0xff},0x8b)](Il1_0x5e1b,{Player=Il1_0x5e0b,Distance=Il1_0x5e19})end end end end end return Il1_0x5e1b end function Il1_0x5e0f.SetClickTeleport(enable,keybind)Il1_0x5e1e=enable Il1_0x5e11=keybind if Il1_0x5e0c then Il1_0x5e0c:Disconnect()Il1_0x5e0c=nil end if Il1_0x5e1f then Il1_0x5e1f:Disconnect()Il1_0x5e1f=nil end if not enable then return end local Il1_0x5e16=Il1_0x5e13:GetMouse()Il1_0x5e0c=Il1_0x5e16[_0x3bff({0xdf,0xe8,0xe9,0xe9,0xf2,0xf3,0xac,0xd9,0xf2,0xea,0xf3},0x9d)]:Connect(function()if not Il1_0x5e1e then return end if Il1_0x5e11 and not Il1_0x5e18:IsKeyDown(Il1_0x5e11)then return end local Il1_0x5e08=Il1_0x5e16[_0x3bff({0xb9,0x98,0x85},0xf1)]if Il1_0x5e08 then Il1_0x5e0f[_0x3bff({0x2f,0x14,0x2b,0x14,0x08,0x12,0x0f,0x12,0x14,0x15},0x7b)](Il1_0x5e08[_0x3bff({0xf7},0x87)])end end)if Il1_0x5e11 then Il1_0x5e1f=Il1_0x5e18[_0x3bff({0xe2,0xc5,0xdb,0xde,0xdf,0xe9,0xce,0xcc,0xca,0xc5},0xab)]:Connect(function(input,gameProcessed)if gameProcessed then return end if input[_0x3bff({0xc5,0xeb,0xf7,0xcd,0xe1,0xea,0xeb},0x8e)]==Il1_0x5e11 then end end)end end function Il1_0x5e0f.IsClickTeleportEnabled()return Il1_0x5e1e end return Il1_0x5e0f end)(...)
+    Cách sử dụng:
+        local Teleport = require(https://raw.githubusercontent.com/WiniFyCode/Roblox/refs/heads/main/libs/Teleport.lua)
+
+        -- Dịch chuyển đến vị trí cụ thể
+        Teleport.ToPosition(Vector3.new(100, 50, 200))
+
+        -- Dịch chuyển đến người chơi (theo tên hoặc UserId)
+        Teleport.ToPlayer("PlayerName")
+        Teleport.ToPlayer(12345678)  -- Player.UserId
+
+        -- Dịch chuyển đến PlaceId khác
+        Teleport.ToPlace(12345678)
+
+        -- Tìm player gần nhất
+        local player, distance = Teleport.GetNearestPlayer()
+
+        -- Tìm player theo tên (partial match)
+        local target = Teleport.GetPlayerByName("VIP")
+        Teleport.ToPlayer(target)
+
+        -- Lấy danh sách người chơi trong bán kính
+        local nearby = Teleport.GetPlayersInRange(20)
+
+        -- Click Teleport - click đất để dịch chuyển
+        Teleport.SetClickTeleport(true, Enum.KeyCode.Q)  -- Bật với phím Q
+        Teleport.SetClickTeleport(false)                 -- Tắt
+
+        -- Click Teleport không cần phím (luôn bật khi click)
+        Teleport.SetClickTeleport(true)
+        Teleport.SetClickTeleport(false)
+--]]
+
+local Teleport = {}
+
+-- Services
+local Players = game:GetService("Players")
+local TeleportService = game:GetService("TeleportService")
+local UserInputService = game:GetService("UserInputService")
+local LocalPlayer = Players.LocalPlayer
+
+-- State variables cho Click Teleport
+local clickTeleportEnabled = false
+local clickKeybind = nil -- nil = luôn bật, Enum.KeyCode.X = bật với phím X
+local clickConn = nil
+local clickInputConn = nil
+
+-- GetCharacter - Lấy nhân vật local player
+local function getLocalCharacter()
+    return LocalPlayer.Character or workspace:FindFirstChild(LocalPlayer.Name)
+end
+
+local function getRootPart(character)
+    if character then
+        return character:FindFirstChild("HumanoidRootPart") or
+            character:FindFirstChild("Torso") or
+            character:FindFirstChild("UpperTorso")
+    end
+    return nil
+end
+
+-- ToPosition - Dịch chuyển đến vị trí 3D
+-- @param position: Vector3 - vị trí đến
+-- @param offsetY: (optional) offset Y để tránh rơi xuống
+function Teleport.ToPosition(position, offsetY)
+    if not position or typeof(position) ~= "Vector3" then
+        warn("Vị trí không hợp lệ")
+        return false
+    end
+
+    local character = getLocalCharacter()
+    if not character then return false end
+
+    local rootPart = getRootPart(character)
+    if not rootPart then return false end
+
+    rootPart.CFrame = CFrame.new(position.X, position.Y + (offsetY or 5), position.Z)
+    return true
+end
+
+-- ToPlayer - Dịch chuyển đến vị trí của người chơi
+-- @param player: string(playerName) hoặc number(userId)
+function Teleport.ToPlayer(player)
+    if not player then return false end
+
+    local targetPlayer = nil
+
+    -- Tìm player theo tên hoặc ID
+    if typeof(player) == "string" then
+        targetPlayer = Players:FindFirstChild(player) or Players:WaitForChild(player, 1)
+    elseif typeof(player) == "number" then
+        for _, p in ipairs(Players:GetPlayers()) do
+            if p.UserId == player then
+                targetPlayer = p
+                break
+            end
+        end
+    elseif player:IsA("Player") then
+        targetPlayer = player
+    end
+
+    if not targetPlayer then
+        warn("Không tìm thấy player:", player)
+        return false
+    end
+
+    -- Lấy vị trí của player đích
+    local targetChar = targetPlayer.Character or workspace:FindFirstChild(targetPlayer.Name)
+    if not targetChar then
+        warn("Player chưa có character")
+        return false
+    end
+
+    local targetRoot = getRootPart(targetChar)
+    if not targetRoot then return false end
+
+    -- Dịch chuyển đến gần player đích
+    local targetPos = targetRoot.Position
+    local character = getLocalCharacter()
+    if not character then return false end
+
+    local rootPart = getRootPart(character)
+    if not rootPart then return false end
+
+    -- Dịch chuyển lên trên player đích 3 stud
+    rootPart.CFrame = CFrame.new(targetPos) * CFrame.new(0, 3, 0)
+    return true
+end
+
+-- ToPlace - Dịch chuyển đến PlaceId khác
+-- @param placeId: number - ID của game muốn chuyển đến
+function Teleport.ToPlace(placeId)
+    if not placeId then
+        warn("PlaceId không hợp lệ")
+        return false
+    end
+
+    local success = pcall(function()
+        TeleportService:Teleport(placeId, LocalPlayer)
+    end)
+
+    return success
+end
+
+-- GetPlayers - Lấy danh sách tất cả người chơi trừ mình
+-- @return table - danh sách player objects
+function Teleport.GetPlayers()
+    local players = {}
+    for _, player in ipairs(Players:GetPlayers()) do
+        if player ~= LocalPlayer then
+            table.insert(players, player)
+        end
+    end
+    return players
+end
+
+-- GetNearestPlayer - Tìm người chơi gần nhất
+-- @return Player hoặc nil nếu không có ai
+function Teleport.GetNearestPlayer()
+    local character = getLocalCharacter()
+    if not character then return nil end
+
+    local rootPart = getRootPart(character)
+    if not rootPart then return nil end
+
+    local nearestPlayer = nil
+    local nearestDistance = math.huge
+
+    for _, player in ipairs(Players:GetPlayers()) do
+        if player ~= LocalPlayer then
+            local targetChar = player.Character or workspace:FindFirstChild(player.Name)
+            if targetChar then
+                local targetRoot = getRootPart(targetChar)
+                if targetRoot then
+                    local distance = (targetRoot.Position - rootPart.Position).magnitude
+                    if distance < nearestDistance then
+                        nearestDistance = distance
+                        nearestPlayer = player
+                    end
+                end
+            end
+        end
+    end
+
+    return nearestPlayer, nearestDistance
+end
+
+-- ToNearest - Dịch chuyển đến người chơi gần nhất
+function Teleport.ToNearest()
+    local player, distance = Teleport.GetNearestPlayer()
+    if player then
+        return Teleport.ToPlayer(player)
+    end
+    return false
+end
+
+-- GetPlayerByName - Tìm player theo tên (partial match)
+-- @param name: string - tên hoặc một phần tên
+-- @return Player hoặc nil
+function Teleport.GetPlayerByName(name)
+    if not name then return nil end
+
+    name = string.lower(name)
+
+    for _, player in ipairs(Players:GetPlayers()) do
+        if string.lower(player.Name):find(name) or
+            (player.DisplayName and string.lower(player.DisplayName):find(name)) then
+            return player
+        end
+    end
+
+    return nil
+end
+
+-- ToPositionByName - Dịch chuyển đến vị trí một người chơi bằng tên
+-- @param name: string - tên hoặc một phần tên của player
+function Teleport.ToPlayerByName(name)
+    local player = Teleport.GetPlayerByName(name)
+    if player then
+        return Teleport.ToPlayer(player)
+    end
+    return false
+end
+
+-- GetPlayersInRange - Lấy danh sách người chơi trong phạm vi
+-- @param range: number - phạm vi tính bằng stud
+-- @return table - danh sách {player, distance}
+function Teleport.GetPlayersInRange(range)
+    range = range or 50
+    local character = getLocalCharacter()
+    if not character then return {} end
+
+    local rootPart = getRootPart(character)
+    if not rootPart then return {} end
+
+    local inRange = {}
+    for _, player in ipairs(Players:GetPlayers()) do
+        if player ~= LocalPlayer then
+            local targetChar = player.Character or workspace:FindFirstChild(player.Name)
+            if targetChar then
+                local targetRoot = getRootPart(targetChar)
+                if targetRoot then
+                    local distance = (targetRoot.Position - rootPart.Position).magnitude
+                    if distance <= range then
+                        table.insert(inRange, {
+                            Player = player,
+                            Distance = distance
+                        })
+                    end
+                end
+            end
+        end
+    end
+
+    return inRange
+end
+
+-- SetClickTeleport - Bật/tắt click to teleport
+-- @param enable: boolean
+-- @param keybind: Enum.KeyCode (tùy chọn) - phím để kích hoạt click teleport
+--    Nếu để trống: luôn hoạt động khi click
+function Teleport.SetClickTeleport(enable, keybind)
+    clickTeleportEnabled = enable
+    clickKeybind = keybind
+
+    -- Ngắt kết nối cũ
+    if clickConn then
+        clickConn:Disconnect()
+        clickConn = nil
+    end
+    if clickInputConn then
+        clickInputConn:Disconnect()
+        clickInputConn = nil
+    end
+
+    if not enable then return end
+
+    -- Kết nối mouse click
+    local mouse = LocalPlayer:GetMouse()
+
+    clickConn = mouse.Button1Down:Connect(function()
+        if not clickTeleportEnabled then return end
+
+        -- Nếu có keybind, kiểm tra đang giữ phím không
+        if clickKeybind and not UserInputService:IsKeyDown(clickKeybind) then
+            return
+        end
+
+        local targetPos = mouse.Hit
+        if targetPos then
+            Teleport.ToPosition(targetPos.p)
+        end
+    end)
+
+    -- Nếu có keybind, setup input listener
+    if clickKeybind then
+        clickInputConn = UserInputService.InputBegan:Connect(function(input, gameProcessed)
+            if gameProcessed then return end
+            if input.KeyCode == clickKeybind then
+                -- Key đang được giữ - click sẽ teleport
+            end
+        end)
+    end
+end
+
+function Teleport.IsClickTeleportEnabled()
+    return clickTeleportEnabled
+end
+
+return Teleport
